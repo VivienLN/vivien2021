@@ -1,0 +1,13 @@
+// Import tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom rules
+body {
+    background-color: #fe7;
+
+    a {
+        color: rgb(255, 66, 113);
+    }
+}
