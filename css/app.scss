@@ -1,13 +1,28 @@
-// Import tailwind
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;800&display=swap');
+
+// Tailwind
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-// Custom rules
-body {
-    background-color: #fe7;
-
-    a {
-        color: rgb(255, 66, 113);
+// Default values for Tailwind base
+@layer base {
+    body {
+        @apply text-secondary-dark;
+        @apply text-base;
+    }
+    strong, h1, h2, h3 {
+        @apply font-extrabold;
     }
 }
+
+// Custom rules
+// body {
+//     background-color: #fe7;
+
+//     a {
+//         color: rgb(255, 66, 113);
+//     }
+// }
+
