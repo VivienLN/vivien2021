@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
-import Intro from '../components/intro'
-import Services from '../components/services'
+import IntroSection from '../components/intro/section'
+import ServicesSection from '../components/services/section'
+import ProjectsSection from '../components/projects/section'
+import ContactSection from '../components/contact/section'
+import FxGoo from '../components/fx/goo'
 
 export default function Home() {
   return (
@@ -12,17 +15,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Intro />
-      <Services />
+      <main className="relative z-10">
+        <IntroSection />
+        <ServicesSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
 
-      <main>
+      <FxGoo />
+
+      <div>
         <h1 className="title">
           Read{' '}
           <Link href="/posts/first-post">
             <a>this page!</a>
           </Link>
         </h1>
-      </main>
+      </div>
     </Layout>
   )
 }

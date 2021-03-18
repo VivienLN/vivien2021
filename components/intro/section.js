@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-export default function Intro() {
+export default function Section() {
     return (
         <header className="text-center">
-            <div className="container mx-auto px-4 py-8 h-screen flex flex-col justify-center">
+            <div className="container mx-auto px-4 py-8 min-h-screen flex flex-col justify-center">
                 <h1 className="text-3xl">
                     Hello,<br/>
                     Je m'appelle Vivien

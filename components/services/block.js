@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Service(props) {
+export default function Block(props) {
     return (
         <div className="mb-12">
             <div className="mb-4">

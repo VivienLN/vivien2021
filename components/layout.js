@@ -2,7 +2,7 @@
 
 export default function Layout({ children }) {
     return (
-        <div>
+        <div className="relative">
             {children}
         </div>
     )
