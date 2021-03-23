@@ -6,9 +6,8 @@
 }
 
 .gooContainer {
-    filter:blur(20px) contrast(30);
-    background: #fff;
-    @apply absolute;
+    filter:url('#goo');
+    @apply fixed;
     @apply bottom-0;
     @apply left-0;
     @apply right-0;
