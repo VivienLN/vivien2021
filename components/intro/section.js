@@ -4,11 +4,13 @@ export default function Section() {
     return (
         <header className="text-center">
             <div className="container mx-auto px-4 py-8 min-h-screen flex flex-col justify-center">
-                <h1 className="text-3xl">
-                    Hello,<br/>
-                    Je m'appelle Vivien
-                </h1>
-                <p className="text-xl">développeur web depuis 10 ans</p>
+                <div className="bg-gradient-to-b from-secondary-dark to-secondary">
+                    <h1 className="text-3xl text-primary">
+                        Hello,<br/>
+                        Je m'appelle Vivien
+                    </h1>
+                    <p className="text-xl text-white">développeur web depuis 10 ans</p>
+                </div>
                 <div className="py-16">
                     <Image src="https://placehold.it/220x220" width={220} height={220} alt="Là c'est moi" />
                 </div>

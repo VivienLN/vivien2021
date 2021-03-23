@@ -9,7 +9,6 @@
 // Default values for Tailwind base
 @layer base {
     body {
-        @apply text-secondary-dark;
         @apply text-base;
     }
     strong, h1, h2, h3 {

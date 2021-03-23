@@ -26,9 +26,13 @@ module.exports = {
       'extrabold': 800
     },
     colors: {
+      base: '#111132',
+      white: '#fff',
+      black: '#000',
+      transparent: 'transparent',
       primary: {
         DEFAULT: '#ffec00',
-        dark: '#fbe307',
+        dark: '#fbe307'
       },
       secondary: {
         DEFAULT: '#441abe',
