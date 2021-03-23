@@ -1,0 +1,8 @@
+$avatar-height: 240px;
+
+.introTop {
+    padding-bottom: $avatar-height / 2;
+}
+.avatar {
+    margin-top: -($avatar-height / 2);
+}
