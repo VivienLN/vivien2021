@@ -1,5 +1,6 @@
 import React from 'react';
-import { Stage, Container, Sprite, useTick } from '@inlet/react-pixi';
+import { Stage, Sprite, useTick, withPixiApp, AppConsumer } from '@inlet/react-pixi';
+import * as PIXI from 'pixi.js';
 
 // import dynamic from 'next/dynamic'
 // const PixiApp = dynamic(
@@ -29,30 +30,67 @@ const transitionShader = `
     }
 `;
 
+// ------------------------------------------
+// Component class
+// ------------------------------------------
 class PixiImage extends React.Component {
     constructor(props) {
         super(props);
+
+        // Variables for PIXI
+        this.config = {
+            // frames
+            transitionDelay: props.transitionDelay || 80,
+            // how many transition time is "taken" by the delay (remaining time is actual fade-in of pixels)
+            transitionDelayRatio: props.transitionDelayRatio || .95
+        }
+
+        // Prepare shader
+        this.shader = new PIXI.Filter(null, transitionShader);
+        this.shader.uniforms.mapSampler = PIXI.Sprite.from("/images/test-project-mask.jpg")._texture;
+        this.shader.uniforms.time = 0.0;
+        this.shader.uniforms.delayRatio = this.config.transitionDelayRatio;
+
+        // React state
         this.state = {
-            
+            isTransitioning: false
         };
+
+        this.handleClick = this.handleClick.bind(this);
+        this.onMount = this.onMount.bind(this);
     }
 
     render() {
-        console.log('useTick');
-        console.log(useTick);
-        // useTick(delta => {
-        //     // do something here
-        // });
-
         return (
-            <Stage onClick={this.clickHandler} width={980} height={340}>
+            <Stage onClick={this.handleClick} onMount={this.onMount} width={980} height={340}>
                 <Sprite image="/images/test-project.jpg" x={0} y={0} />
-    
-                <Container x={500}>
-                    {/* <Text text="Hello World" filter={[blurFilter]} /> */}
-                </Container>
+                <Sprite 
+                    filters = {[this.shader]}
+                    image="/images/test-project-hover.jpg" 
+                    x={0} 
+                    y={0} 
+                />
             </Stage>
         )
+    }
+
+    onMount(app) {
+        console.log('stage mount');
+        console.log(app);
+        console.log(this);
+
+        app.ticker.add(delta => {
+            if(this.state.isTransitioning) {						
+                this.shader.uniforms.time = Math.min(this.shader.uniforms.time + delta / this.config.transitionDelay, 1);
+                if(this.shader.uniforms.time >= 1) {
+                    // wait a little before removing effect
+                    setTimeout(() => {
+                        this.isTransitioning = false;
+                        this.shader.uniforms.time = 0.0;
+                    }, 500);
+                }
+            }
+        })
     }
 
     componentDidMount() {
@@ -63,9 +101,30 @@ class PixiImage extends React.Component {
         
     }
 
-    clickHandler() {
+    handleClick() {
         console.log('click!');
+        if(!this.state.isTransitioning) {
+            // TODO: pass to sprite
+            // simpleShader.uniforms.time = 0.0;
+        }
+        this.setState({
+            isTransitioning: true
+        });
     }
 }
 
-export default PixiImage
+
+// ------------------------------------------
+// Export with app
+// ------------------------------------------
+
+export default withPixiApp(PixiImage)
+
+// const PixiImageWithApp = () => (
+//     <AppConsumer>
+//         {app => <PixiImage app={app} />}
+//     </AppConsumer>
+// );
+
+
+// export default PixiImageWithApp
