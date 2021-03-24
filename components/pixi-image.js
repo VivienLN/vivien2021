@@ -1,12 +1,6 @@
 import React from 'react';
-import { Stage, Sprite, useTick, withPixiApp, AppConsumer } from '@inlet/react-pixi';
+import { Stage, Sprite, withPixiApp } from '@inlet/react-pixi';
 import * as PIXI from 'pixi.js';
-
-// import dynamic from 'next/dynamic'
-// const PixiApp = dynamic(
-//     () => import('pixi.js').then((mod) => mod.Application),
-//     { ssr: false }
-// )
 
 const transitionShader = `
     precision mediump float;
@@ -40,32 +34,33 @@ class PixiImage extends React.Component {
         // Variables for PIXI
         this.config = {
             // frames
-            transitionDelay: props.transitionDelay || 80,
+            transitionDelay: props.transitionDelay || 30,
             // how many transition time is "taken" by the delay (remaining time is actual fade-in of pixels)
-            transitionDelayRatio: props.transitionDelayRatio || .95
+            transitionDelayRatio: props.transitionDelayRatio || .7
         }
 
         // Prepare shader
-        this.shader = new PIXI.Filter(null, transitionShader);
-        this.shader.uniforms.mapSampler = PIXI.Sprite.from("/images/test-project-mask.jpg")._texture;
-        this.shader.uniforms.time = 0.0;
-        this.shader.uniforms.delayRatio = this.config.transitionDelayRatio;
+        this.transitionFilter = new PIXI.Filter(null, transitionShader);
+        this.transitionFilter.uniforms.mapSampler = PIXI.Sprite.from(props.transitionMask)._texture;
+        this.transitionFilter.uniforms.time = 0.0;
+        this.transitionFilter.uniforms.delayRatio = this.config.transitionDelayRatio;
 
         // React state
         this.state = {
-            isTransitioning: false
+            transitionDirection: 0 // 0 = paused; 1 = in; -1 = out
         };
 
-        this.handleClick = this.handleClick.bind(this);
+        this.handleMouseOver = this.handleMouseOver.bind(this);
+        this.handleMouseLeave = this.handleMouseLeave.bind(this);
         this.onMount = this.onMount.bind(this);
     }
 
     render() {
         return (
-            <Stage onClick={this.handleClick} onMount={this.onMount} width={980} height={340}>
+            <Stage onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} onMount={this.onMount} width={980} height={340}>
                 <Sprite image="/images/test-project.jpg" x={0} y={0} />
                 <Sprite 
-                    filters = {[this.shader]}
+                    filters = {[this.transitionFilter]}
                     image="/images/test-project-hover.jpg" 
                     x={0} 
                     y={0} 
@@ -75,41 +70,26 @@ class PixiImage extends React.Component {
     }
 
     onMount(app) {
-        console.log('stage mount');
-        console.log(app);
-        console.log(this);
-
         app.ticker.add(delta => {
-            if(this.state.isTransitioning) {						
-                this.shader.uniforms.time = Math.min(this.shader.uniforms.time + delta / this.config.transitionDelay, 1);
-                if(this.shader.uniforms.time >= 1) {
-                    // wait a little before removing effect
-                    setTimeout(() => {
-                        this.isTransitioning = false;
-                        this.shader.uniforms.time = 0.0;
-                    }, 500);
-                }
-            }
+            let time = this.transitionFilter.uniforms.time + (delta / this.config.transitionDelay) * this.state.transitionDirection;
+            this.transitionFilter.uniforms.time = Math.max(Math.min(time, 1), 0);
         })
     }
 
+    handleMouseOver() {
+        this.setState({transitionDirection: 1});
+    }
+
+    handleMouseLeave() {
+        this.setState({transitionDirection: -1});
+    }
+    
     componentDidMount() {
 
     }
 
     componentWillUnmount() {
         
-    }
-
-    handleClick() {
-        console.log('click!');
-        if(!this.state.isTransitioning) {
-            // TODO: pass to sprite
-            // simpleShader.uniforms.time = 0.0;
-        }
-        this.setState({
-            isTransitioning: true
-        });
     }
 }
 
