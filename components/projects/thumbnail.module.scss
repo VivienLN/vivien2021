@@ -1,0 +1,24 @@
+.link {
+    .linkText > span {
+        $t: .4s;
+        display: block;
+        opacity: 0;
+        // transition: 10s 0s ease-in-out;
+        transition: .3s 0s ease-in-out;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transform: translateY(100%);
+        &:nth-child(1) {
+            transition: all $t 0s ease-in-out, opacity .2s 0s ease-in-out;
+        }
+        &:nth-child(2) {
+            transition: all $t .1s ease-in-out, opacity .2s .1s ease-in-out;
+        }
+    }
+    &:hover {
+        .linkText > span {
+            opacity: 1;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            transform: translateY(0);
+        }
+    }
+}
