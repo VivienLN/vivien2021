@@ -5,7 +5,17 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        breath: {
+          '0%': { transform: 'scale(0.98)', opacity: '1' },
+          '100%': { transform: 'scale(1.04)', opacity: '0.8' }
+        }
+      },
+      animation: {
+        breath: 'breath 1s ease-in-out infinite alternate'
+      }
+    },
     screens: {
       'sm': '520px',
       'md': '768px',

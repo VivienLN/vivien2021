@@ -5,19 +5,19 @@ export default function Section() {
     return (
         // <div className="container mx-auto px-4 py-8 min-h-screen flex flex-col justify-center">
         <header className="text-center">
-            <div className="bg-gradient-to-b from-secondary-dark to-secondary">            
+            <div className="bg-primary">            
                 <div className={styles.introTop}>
-                    <div className="container mx-auto px-4 py-24">
-                        <h1 className="text-4xl text-primary mb-8">
+                    <div className="container mx-auto px-4 py-32">
+                        <h1 className="text-4xl text-base mb-8">
                             Hello,<br/>
                             Je m'appelle Vivien
                         </h1>
-                        <p className="text-2xl text-white">développeur web depuis 10 ans</p>
+                        <p className="text-2xl text-base">développeur web depuis 10 ans</p>
                     </div>
                 </div>
             </div>
             <div className={styles.avatar}>
-                <Image src="https://placehold.it/220x220" width={200} height={240} alt="Là c'est moi" />
+                <Image src="https://placehold.it/300x340" width={300} height={340} alt="Là c'est moi" />
             </div>
             <div className="text-xl w-9/12 mx-auto py-24">
                 <p className="mb-4">
