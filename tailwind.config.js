@@ -43,6 +43,7 @@ module.exports = {
       secondary: {
         DEFAULT: '#441abe',
         dark: '#290c6c',
+        faded: '#47328a'
       },
     }
   },

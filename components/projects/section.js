@@ -17,19 +17,19 @@ export default function Section() {
                 <ProjectThumbnail 
                     title="Xbox"
                     subtitle="Chatbot &amp; jeu mobile"
-                    src="/images/test-project.jpg" 
+                    src="/images/test-project2.jpg" 
                     transitionMask="/images/project-mask2.jpg" 
                 />
                 <ProjectThumbnail 
                     title="Le fil L'Oréal"
-                    subtitle="Plateform influenceurs"
-                    src="/images/test-project.jpg" 
+                    subtitle="Plateforme influenceurs"
+                    src="/images/test-project3.jpg" 
                     transitionMask="/images/project-mask2.jpg" 
                 />
                 <ProjectThumbnail 
                     title="Ni No Kuni II"
                     subtitle="Site officiel"
-                    src="/images/test-project.jpg" 
+                    src="/images/test-project4.jpg" 
                     transitionMask="/images/project-mask2.jpg" 
                 />
             </div>
