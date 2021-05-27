@@ -22,15 +22,14 @@ module.exports = {
       'lg': '980px',
     },
     fontFamily: {
-      'sans': ['"Maven Pro"', 'sans-serif']
+      'sans': ['Overpass', 'sans-serif']
     },
     fontSize: {
       'sm': '1rem',
       'base': '1.125rem',
-      'xl': '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.9rem',
-      '4xl': '3rem'
+      'xl': '1.375rem',
+      '2xl': '2rem',
+      '3xl': '3.25rem'
     },
     fontWeight: {
       'normal': 400,
@@ -42,18 +41,19 @@ module.exports = {
       'relaxed': 1.5
     },
     colors: {
-      base: '#111132',
+      base: '#000',
       white: '#fff',
       black: '#000',
       transparent: 'transparent',
       primary: {
-        DEFAULT: '#ffec00',
-        dark: '#fbe307'
+        DEFAULT: '#ffe200',
+        dark: '#f5ce00',
+        darker: '#e7c300'
       },
       secondary: {
-        DEFAULT: '#441abe',
-        dark: '#290c6c',
-        faded: '#47328a'
+        DEFAULT: '#95ecff',
+        dark: '#2d3751',
+        faded: '#5db1dc'
       },
     }
   },

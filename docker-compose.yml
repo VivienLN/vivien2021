@@ -4,15 +4,14 @@ services:
         image: node:14
         container_name: webapp
         working_dir: /home/node/app
-        command: bash -c "yarn install && yarn run dev"
+        command: yarn run dev
         volumes:
             - .:/home/node/app
         ports:
             - 3000:3000
         networks:
             - app
+        restart: on-failure
 networks:
     app:
         driver: bridge
-volumes:
-    dbdata:

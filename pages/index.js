@@ -10,14 +10,14 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Create Next App</title>
+        <title>Vivien</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <IntroSection />
-      <ServicesSection />
+      {/* <ServicesSection />
       <ProjectsSection />
-      <ContactSection />
+      <ContactSection /> */}
 
       <div>
         <h1 className="title">
