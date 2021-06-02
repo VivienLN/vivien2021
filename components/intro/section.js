@@ -10,7 +10,7 @@ export default function Section() {
             </h1>
             <div className="transform -skew-y-3 bg-primary mb-16">
                 <div className="transform skew-y-3 relative -top-8 pb-4">
-                    <div className="container mx-auto px-4 w-7/12">
+                    <div className="container mx-auto px-4">
                         <div className="mb-8">
                             <Image src="/images/profilepic.png" width={255} height={287} alt="Là c'est moi" />
                         </div>

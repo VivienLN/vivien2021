@@ -13,10 +13,9 @@ export default function Home() {
         <title>Vivien</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <IntroSection />
-      {/* <ServicesSection />
-      <ProjectsSection />
+      <ServicesSection />
+      {/* <ProjectsSection />
       <ContactSection /> */}
 
       <div>
