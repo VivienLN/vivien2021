@@ -10,7 +10,7 @@ $max-width: 340;
     // (ie. if the mask is mask-size: 50% (width) and mask-position: 50% (left), it wont be aligned to the right, but centered)
     // ... but left 0% *IS* aligned to left
     // mask-position: (100% * $x / $max-width) 0;
-    mask-position: ((100% * $x / $max-width) / ($width / $max-width)) 0;
+    mask-position: ((100% * $x / $max-width) / ($width / $max-width)) center;
 }
 
 .serviceImage {
