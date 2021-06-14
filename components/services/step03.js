@@ -1,6 +1,8 @@
 import StepContent from './step-content'
 import StepImage from './step-image'
 import StepLeft from './step-left'
+import IconRocket from '../icons/rocket'
+import StepIcon from './step-icon'
 
 export default function Step03(props) {
     return (
@@ -11,6 +13,7 @@ export default function Step03(props) {
                     <div className="relative">
                         <StepImage imageClass="lineEnd" className="absolute top-0 left-0 right-0" />
                         <StepImage imageClass="hexagon03" />
+                        <StepIcon icon={IconRocket} />
                     </div>
                     <div className="flex-grow"></div>
                 </StepLeft>

@@ -1,6 +1,8 @@
 import StepContent from './step-content'
 import StepImage from './step-image'
 import StepLeft from './step-left'
+import IconBrainstorm from '../icons/brainstorm'
+import StepIcon from './step-icon'
 
 export default function Step01(props) {
     return (
@@ -8,7 +10,10 @@ export default function Step01(props) {
             <div className="col-span-1">
                 <StepLeft>
                     <div className="flex-grow"></div>
-                    <StepImage imageClass="hexagon01" />
+                    <div className="relative">
+                        <StepImage imageClass="hexagon01" />
+                        <StepIcon icon={IconBrainstorm} />
+                    </div>
                     <StepImage imageClass="linePatch01" className="flex-grow" />
                 </StepLeft>
             </div>
