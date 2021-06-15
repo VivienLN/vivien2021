@@ -15,8 +15,8 @@ export default function Home() {
       </Head>
       <IntroSection />
       <ServicesSection />
-      {/* <ProjectsSection />
-      <ContactSection /> */}
+      <ProjectsSection />
+      {/* <ContactSection /> */}
 
       <div>
         <h1 className="title">

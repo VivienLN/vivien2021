@@ -11,52 +11,32 @@ class Thumbnail extends React.Component {
         this.state = {
 
         };
-
-        // this.handleMouseEnter = this.handleMouseEnter.bind(this);
-        // this.handleMouseLeave = this.handleMouseLeave.bind(this);
     }
 
     render() {
         return (
-            <div className="mb-4 overflow-hidden rounded-lg relative">
+            <div className="overflow-hidden rounded relative">
                 <Link href="/posts/first-post">
                     <a className={styles.link}>
                         <span className={"pointer-events-none absolute z-10 inset-0 flex flex-col text-center justify-center p-4 " + styles.linkText}>
-                            <span className="my-4 text-4xl font-extrabold">{this.props.title}</span>
-                            <span className="my-4 text-xl uppercase ">{this.props.subtitle}</span>
+                            <span className="my-2 text-3xl font-extrabold">{this.props.title}</span>
+                            <span className="my-2">{this.props.subtitle}</span>
                         </span>
                         <PixiImage 
                             src={this.props.src}
-                            width={980} 
-                            height={340}
+                            width={800} 
+                            height={500}
                             alt="" 
                             transitionDelayRatio={.5}
                             transitionDelay={20}
                             transitionMask={this.props.transitionMask}
-                            gradientMap={{0: "#c6c2e8", .56:"#fff795", 1:"#fff"}}
+                            gradientMap={{0: "#9ad5ff", 0.6: "#fff493", 1:"#fff"}}
                         />
                     </a>
                 </Link>
             </div>
         )
     }
-
-    /*
-    handleMouseEnter() {
-        console.log('handleMouseEnter');
-        this.setState({
-            transitionDirection: 1
-        });
-    }
-
-    handleMouseLeave() {
-        console.log('handleMouseLeave');
-        // this.backgroundImage.current.handleMouseLeave();
-        this.setState({
-            transitionDirection: -1
-        });
-    }
-    */
 }
 
 export default Thumbnail
