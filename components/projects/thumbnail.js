@@ -20,7 +20,7 @@ class Thumbnail extends React.Component {
                     <a className={styles.link}>
                         <span className={"pointer-events-none absolute z-10 inset-0 flex flex-col text-center justify-center p-4 " + styles.linkText}>
                             <span className="my-2 text-3xl font-extrabold">{this.props.title}</span>
-                            <span className="my-2">{this.props.subtitle}</span>
+                            <span className="my-2 font-extrabold">{this.props.subtitle}</span>
                         </span>
                         <PixiImage 
                             src={this.props.src}

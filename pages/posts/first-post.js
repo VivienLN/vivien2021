@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Head from "next/head"
 import Layout from "../../components/layout"
+import { motion } from "framer-motion";
 
 export default function FirstPost() {
     return (

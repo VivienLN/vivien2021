@@ -29,7 +29,8 @@ module.exports = {
       'base': '1.125rem',
       'xl': '1.375rem',
       '2xl': '2rem',
-      '3xl': '3.25rem'
+      '3xl': '3.25rem',
+      '4xl': '5rem'
     },
     fontWeight: {
       'normal': 400,
@@ -53,6 +54,7 @@ module.exports = {
       secondary: {
         DEFAULT: '#95ecff',
         dark: '#2d3751',
+        darker: '#20232a',
         faded: '#5db1dc'
       },
     }

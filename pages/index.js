@@ -13,11 +13,7 @@ export default function Home() {
         <title>Vivien</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <IntroSection />
-      <ServicesSection />
-      <ProjectsSection />
-      {/* <ContactSection /> */}
-
+      
       <div>
         <h1 className="title">
           Read{' '}
@@ -26,6 +22,11 @@ export default function Home() {
           </Link>
         </h1>
       </div>
+
+      <IntroSection />
+      <ServicesSection />
+      <ProjectsSection />
+      {/* <ContactSection /> */}
     </Layout>
   )
 }

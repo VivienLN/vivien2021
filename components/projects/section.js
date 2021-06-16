@@ -11,7 +11,7 @@ export default function Section() {
     }
     return (
         <SectionBase title="Réalisations">
-            <div className="overflow-hidden width-full py-8">
+            <div className="overflow-hidden width-full">
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2 transform origin-bottom-left -rotate-3" style={containerStyles}>
                     <ProjectThumbnail 
                         title="The Sinking City"
