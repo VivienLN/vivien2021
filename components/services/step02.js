@@ -21,14 +21,6 @@ export default function Step02(props) {
                 <StepContent title="2. Réaliser">
                     <p className="mb-4">Je suis développeur full-stack. Ca veut dire que je m'occupe de tout&nbsp;: vous pouvez vous détendre.</p>
                     <p>Je développe des sites et applications rapides, sécurisés et robustes.</p>
-                    <p className="mb-4">Je suis développeur full-stack. Ca veut dire que je m'occupe de tout&nbsp;: vous pouvez vous détendre.</p>
-                    <p>Je développe des sites et applications rapides, sécurisés et robustes.</p>
-                    <p className="mb-4">Je suis développeur full-stack. Ca veut dire que je m'occupe de tout&nbsp;: vous pouvez vous détendre.</p>
-                    <p>Je développe des sites et applications rapides, sécurisés et robustes.</p>
-                    <p className="mb-4">Je suis développeur full-stack. Ca veut dire que je m'occupe de tout&nbsp;: vous pouvez vous détendre.</p>
-                    <p>Je développe des sites et applications rapides, sécurisés et robustes.</p>
-                    <p className="mb-4">Je suis développeur full-stack. Ca veut dire que je m'occupe de tout&nbsp;: vous pouvez vous détendre.</p>
-                    <p>Je développe des sites et applications rapides, sécurisés et robustes.</p>
                 </StepContent>
             </div>
         </div>

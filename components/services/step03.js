@@ -21,14 +21,6 @@ export default function Step03(props) {
             <div className="col-span-3 self-center">
                 <StepContent title="3. Accompagner">
                     <p>Je continue à vous accompagner après la première livraison, pour la maintenance et les évolutions futures.</p>
-                    <p>Je continue à vous accompagner après la première livraison, pour la maintenance et les évolutions futures.</p>
-                    <p>Je continue à vous accompagner après la première livraison, pour la maintenance et les évolutions futures.</p>
-                    <p>Je continue à vous accompagner après la première livraison, pour la maintenance et les évolutions futures.</p>
-                    <p>Je continue à vous accompagner après la première livraison, pour la maintenance et les évolutions futures.</p>
-                    <p>Je continue à vous accompagner après la première livraison, pour la maintenance et les évolutions futures.</p>
-                    <p>Je continue à vous accompagner après la première livraison, pour la maintenance et les évolutions futures.</p>
-                    <p>Je continue à vous accompagner après la première livraison, pour la maintenance et les évolutions futures.</p>
-                    <p>Je continue à vous accompagner après la première livraison, pour la maintenance et les évolutions futures.</p>
                 </StepContent>
             </div>
         </div>
