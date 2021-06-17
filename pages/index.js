@@ -5,6 +5,7 @@ import IntroSection from '../components/intro/section'
 import ServicesSection from '../components/services/section'
 import ProjectsSection from '../components/projects/section'
 import ContactSection from '../components/contact/section'
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <title>Vivien</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <div>
         <h1 className="title">
           Read{' '}

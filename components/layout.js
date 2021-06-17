@@ -1,4 +1,4 @@
-// import styles from "./layout.module.css"
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Layout({ children }) {
     return (

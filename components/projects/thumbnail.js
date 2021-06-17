@@ -16,7 +16,7 @@ class Thumbnail extends React.Component {
     render() {
         return (
             <div className="overflow-hidden rounded relative">
-                <Link href="/projects/test">
+                <Link href="/projects/test" scroll={false}>
                     <a className={styles.link}>
                         <span className={"pointer-events-none absolute z-10 inset-0 flex flex-col text-center justify-center p-4 " + styles.linkText}>
                             <span className="my-2 text-3xl font-extrabold">{this.props.title}</span>

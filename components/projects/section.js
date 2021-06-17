@@ -10,7 +10,7 @@ export default function Section() {
         padding: '5.5% 0'
     }
     return (
-        <SectionBase title="Réalisations">
+        <SectionBase title="Réalisations" id="section-projects">
             <div className="overflow-hidden width-full">
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2 transform origin-bottom-left -rotate-3" style={containerStyles}>
                     <ProjectThumbnail 
