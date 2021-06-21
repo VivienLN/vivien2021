@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import NavLink from '../nav-link'
+import Container from '../container'
 
 export default function Section() {
     return (
@@ -10,7 +11,7 @@ export default function Section() {
             </h1>
             <div className="transform -skew-y-3 bg-primary mb-16">
                 <div className="transform skew-y-3 relative -top-8 pb-4">
-                    <div className="container mx-auto px-4">
+                    <Container>
                         <div className="mb-8">
                             <Image src="/images/profilepic.png" width={255} height={287} alt="Là c'est moi" />
                         </div>
@@ -23,7 +24,7 @@ export default function Section() {
                         <p>
                             Continuez pour en savoir plus ou allez voir mon CV.
                         </p>
-                    </div>
+                    </Container>
                 </div>
             </div>
             <nav>

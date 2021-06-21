@@ -1,6 +1,7 @@
 import Link from "next/link"
 import MetaList from "../../components/projects/meta-list";
 import Head from "next/head"
+import Container from '../container'
 
 export default function Header(props) {
     let heroStyle = {
@@ -26,12 +27,16 @@ export default function Header(props) {
             <Head>
                 <title>{ props.data.name } - Vivien</title>
             </Head>
+
             <div style={titleStyle}>
-                <div className="container mx-auto px-4 text-center text-white">
-                    <h1 className="text-2xl md:text-4xl font-extrabold">{ props.data.name }</h1>
-                    <p className="md:text-xl font-extrabold">{ props.data.subtitle }</p>
-                    <h2><Link href="/#section-projects" scroll={false}><a>Return to index</a></Link></h2>
-                </div>
+                <Container>
+                    <div className="text-center text-white">
+
+                        <h1 className="text-2xl md:text-4xl font-extrabold">{ props.data.name }</h1>
+                        <p className="md:text-xl font-extrabold">{ props.data.subtitle }</p>
+                        <h2><Link href="/#section-projects" scroll={false}><a>Return to index</a></Link></h2>
+                    </div>
+                </Container>
             </div>
 
             <header>
@@ -42,10 +47,12 @@ export default function Header(props) {
                 <div style={heroStyle}></div>
                 <div className="relative z-10 bg-white">
                     <div className="bg-primary py-12 md:py-20 transform -skew-y-3 origin-top-left">
-                        <div className="transform skew-y-3 container mx-auto px-4 py-8">
-                            <div className="md:flex justify-between">
-                                { props.data.meta.map((meta, i) => <MetaList key={i} title={ meta.title } items={ meta.items } />) }
-                            </div>
+                        <div className="transform skew-y-3 py-8">
+                            <Container>
+                                <div className="md:flex justify-between">
+                                    { props.data.meta.map((meta, i) => <MetaList key={i} title={ meta.title } items={ meta.items } />) }
+                                </div>
+                            </Container>
                         </div>
                     </div>
                 </div>
