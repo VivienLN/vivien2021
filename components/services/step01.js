@@ -5,6 +5,7 @@ import IconBrainstorm from '../icons/brainstorm'
 import StepIcon from './step-icon'
 
 export default function Step01(props) {
+
     return (
         <div className="grid grid-cols-5 items-stretch justify-center">
             <div className="col-span-1">
