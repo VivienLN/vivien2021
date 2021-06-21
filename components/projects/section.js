@@ -1,8 +1,6 @@
 import ProjectThumbnail from './thumbnail'
 import SectionBase from '../section'
-
-// import dynamic from 'next/dynamic'
-// const ProjectThumbnail = dynamic(() => import('./thumbnail'), { ssr: false })
+import projectsData from '../../resources/projects'
 
 export default function Section() {
     let containerStyles = {
@@ -13,7 +11,8 @@ export default function Section() {
         <SectionBase title="Réalisations" id="section-projects">
             <div className="overflow-hidden width-full">
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2 transform origin-bottom-left -rotate-3" style={containerStyles}>
-                    <ProjectThumbnail 
+                    { Object.keys(projectsData).map(slug => projectsData[slug].active && <ProjectThumbnail key={slug} project={projectsData[slug]} slug={slug} />) }
+                    {/* <ProjectThumbnail 
                         title="The Sinking City"
                         subtitle="Site officiel"
                         src="/images/test-project.jpg" 
@@ -48,7 +47,7 @@ export default function Section() {
                         subtitle="Chatbot &amp; jeu mobile"
                         src="/images/test-project6.jpg" 
                         transitionMask="/images/project-mask2.jpg" 
-                    />
+                    /> */}
                 </div>
             </div>
         </SectionBase>

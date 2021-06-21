@@ -6,7 +6,7 @@ export default function TitleBanner(props) {
         <>
             <style jsx>{`
                 .titleBanner {
-                    background: url('/images/test-project-hero.jpg') no-repeat fixed center center;
+                    background: url(${ props.url }) no-repeat fixed center center;
                     background-size: cover;
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
