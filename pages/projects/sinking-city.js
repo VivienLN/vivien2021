@@ -5,9 +5,6 @@ import ProjectHeader from "../../components/projects/header"
 import ProjectSummary from "../../components/projects/summary"
 
 export default function Project() {
-    const router = useRouter()
-    const { slug } = router.query
-
     const projectData = {
         name: "The Sinking City",
         subtitle: "Site officiel",

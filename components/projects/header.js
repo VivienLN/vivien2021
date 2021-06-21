@@ -1,34 +1,38 @@
 import Link from "next/link"
-import MetaList from "../../components/projects/meta-list";
+import Meta from "../../components/projects/meta";
 import Head from "next/head"
 import Container from '../container'
 
 export default function Header(props) {
-    let heroStyle = {
-        background: "url('/images/test-project-hero.jpg') no-repeat fixed center center",
-        backgroundSize: "cover",
-        height: "80vh",
-    }
-
-    let titleStyle = {
-        background: "url('/images/test-project-hero.jpg') no-repeat fixed center center",
-        backgroundSize: "cover",
-        "-webkit-text-fill-color": "transparent",
-        "-webkit-background-clip": "text",
-        position: "fixed",
-        top: "20vh",
-        width: "100%",
-        marginTop: "-3rem",
-        zIndex: "1"
-    }
-    
     return (
-        <div>
+        <header>
+            <style jsx>{`
+                .titleBanner {
+                    background: url('/images/test-project-hero.jpg') no-repeat fixed center center;
+                    background-size: cover;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    position: fixed;
+                    top: 20vh;
+                    width: 100%;
+                    margin-top: -3rem;
+                    z-index: 1;
+                }
+                .titleBannerBg {
+                    min-height: 40vh;
+                }
+                .heroBanner {
+                    background: url('/images/test-project-hero.jpg') no-repeat fixed center center;
+                    background-size: cover;
+                    height: 80vh;
+                }
+            `}</style>
+
             <Head>
                 <title>{ props.data.name } - Vivien</title>
             </Head>
 
-            <div style={titleStyle}>
+            <div className="titleBanner">
                 <Container>
                     <div className="text-center text-white">
 
@@ -39,24 +43,14 @@ export default function Header(props) {
                 </Container>
             </div>
 
-            <header>
-                <div className="bg-secondary-darker">
-                    <div className="bg-secondary-darker pt-8 pb-12 items-center transform -skew-y-3 origin-top-right" style={{ minHeight: "40vh" }}>
-                    </div>
+            <div className="bg-secondary-darker">
+                <div className="titleBannerBg bg-secondary-darker pt-8 pb-12 items-center transform -skew-y-3 origin-top-right">
                 </div>
-                <div style={heroStyle}></div>
-                <div className="relative z-10 bg-white">
-                    <div className="bg-primary py-12 md:py-20 transform -skew-y-3 origin-top-left">
-                        <div className="transform skew-y-3 py-8">
-                            <Container>
-                                <div className="md:flex justify-between">
-                                    { props.data.meta.map((meta, i) => <MetaList key={i} title={ meta.title } items={ meta.items } />) }
-                                </div>
-                            </Container>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
+            </div>
+
+            <div className="heroBanner"></div>
+
+            <Meta data={ props.data.meta }/>
+        </header>
     )
 }
