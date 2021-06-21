@@ -1,5 +1,5 @@
-import Container from '../container'
-import MetaList from "../../components/projects/meta-list";
+import Container from '../../container'
+import MetaList from "./meta-list";
 
 export default function Meta(props) {
     return (

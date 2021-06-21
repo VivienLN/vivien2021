@@ -1,6 +1,6 @@
 import Head from "next/head"
-import Meta from "../../components/projects/meta";
-import TitleBanner from "../../components/projects/title-banner";
+import Meta from "./meta";
+import TitleBanner from "./title-banner";
 import HeroBanner from "./hero-banner";
 
 export default function Header(props) {

@@ -1,8 +1,7 @@
 
 import Layout from "../../components/layout"
-import { useRouter } from 'next/router'
-import ProjectHeader from "../../components/projects/header"
-import ProjectSummary from "../../components/projects/summary"
+import ProjectHeader from "../../components/projects/page/header"
+import ProjectSummary from "../../components/projects/page/summary"
 
 export default function Project() {
     const projectData = {
