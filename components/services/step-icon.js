@@ -10,7 +10,7 @@ export default function StepIcon(props) {
     const { ref, inView, entry } = useInView({
         /* Optional options */
         threshold: 1,
-        rootMargin: '0px 0px -200px',
+        rootMargin: '0px 0px -140px',
         triggerOnce: true,
         delay: 0
     });
