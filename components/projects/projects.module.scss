@@ -1,0 +1,63 @@
+
+.projectsGrid {
+    width: 104%; 
+    padding: 5.5% 0;
+}
+
+.projectsSection {
+    .projectThumbnail {
+        opacity: 0;
+        // transition: .5s cubic-bezier(0.250, 0.230, 0.230, 1.515);
+        transition: .8s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        // transform: scale(.9);
+        transform: translateY(40px);
+        @for $i from 1 to 9 {
+            &:nth-child(#{$i}) {
+                transition-delay: .3s * ($i - 1);
+            }
+        }
+    }
+    &.inView {
+        .projectThumbnail {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+}
+
+
+
+
+.link {
+    .linkText > span {
+        $t: .3s;
+        display: block;
+        opacity: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transform: translateY(100%);
+        &:nth-child(1) {
+            transition: all $t 0s ease-out, opacity .2s 0s ease-in-out;
+        }
+        &:nth-child(2) {
+            transition: all $t .08s ease-out, opacity .2s .08s ease-in-out;
+        }
+    }
+
+    canvas {
+        transform: scale(1);
+        transition: 1s ease-out;
+    }
+
+    &:hover {
+        .linkText > span {
+            opacity: 1;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            transform: translateY(0);
+        }
+
+        canvas {
+            transform: scale(1.1);
+            transition: 6s ease-out;
+        }
+    }
+}

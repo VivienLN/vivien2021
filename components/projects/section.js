@@ -1,53 +1,23 @@
 import ProjectThumbnail from './thumbnail'
 import SectionBase from '../section'
 import projectsData from '../../resources/projects'
+import styles from './projects.module.scss'
+import { useInView } from 'react-intersection-observer';
 
 export default function Section() {
-    let containerStyles = {
-        width: '104%', 
-        padding: '5.5% 0'
-    }
+    const { ref, inView, entry } = useInView({
+        threshold: .3,
+        triggerOnce: true,
+    });
     return (
         <SectionBase title="Réalisations" id="section-projects">
-            <div className="overflow-hidden width-full">
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 transform origin-bottom-left -rotate-3" style={containerStyles}>
-                    { Object.keys(projectsData).map(slug => projectsData[slug].active && <ProjectThumbnail key={slug} project={projectsData[slug]} slug={slug} />) }
-                    {/* <ProjectThumbnail 
-                        title="The Sinking City"
-                        subtitle="Site officiel"
-                        src="/images/test-project.jpg" 
-                        transitionMask="/images/project-mask.jpg" 
-                    />
-                    <ProjectThumbnail 
-                        title="Xbox"
-                        subtitle="Chatbot &amp; jeu mobile"
-                        src="/images/test-project2.jpg" 
-                        transitionMask="/images/project-mask2.jpg" 
-                    />
-                    <ProjectThumbnail 
-                        title="Le fil L'Oréal"
-                        subtitle="Plateforme influenceurs"
-                        src="/images/test-project3.jpg" 
-                        transitionMask="/images/project-mask2.jpg" 
-                    />
-                    <ProjectThumbnail 
-                        title="Ni No Kuni II"
-                        subtitle="Site officiel"
-                        src="/images/test-project4.jpg" 
-                        transitionMask="/images/project-mask2.jpg" 
-                    />
-                    <ProjectThumbnail 
-                        title="The Sinking City"
-                        subtitle="Site officiel"
-                        src="/images/test-project5.jpg" 
-                        transitionMask="/images/project-mask2.jpg" 
-                    />
-                    <ProjectThumbnail 
-                        title="Xbox"
-                        subtitle="Chatbot &amp; jeu mobile"
-                        src="/images/test-project6.jpg" 
-                        transitionMask="/images/project-mask2.jpg" 
-                    /> */}
+            <div ref={ref} className={"overflow-hidden width-full "  + styles.projectsSection + " " + (inView ? styles.inView : "")}>
+                <div className={"grid grid-cols-2 md:grid-cols-3 gap-2 transform origin-bottom-left -rotate-3 " + styles.projectsGrid}>
+                    { 
+                        Object.keys(projectsData).map(
+                            slug => projectsData[slug].active && <ProjectThumbnail key={slug} project={projectsData[slug]} slug={slug} />
+                        ) 
+                    }
                 </div>
             </div>
         </SectionBase>

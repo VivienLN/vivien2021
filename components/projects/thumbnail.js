@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import React from 'react'
-import styles from './thumbnail.module.scss'
+import styles from './projects.module.scss'
 
 const PixiImage = dynamic(() => import('../pixi-image'), { ssr: false })
 
@@ -15,7 +15,7 @@ class Thumbnail extends React.Component {
 
     render() {
         return (
-            <div className="overflow-hidden rounded relative">
+            <div className={"overflow-hidden rounded relative " + styles.projectThumbnail }>
                 <Link href={"/projects/" + this.props.slug} scroll={false}>
                     <a className={styles.link}>
                         <span className={"pointer-events-none absolute z-10 inset-0 flex flex-col text-center justify-center p-4 " + styles.linkText}>

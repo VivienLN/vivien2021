@@ -15,8 +15,6 @@ export default function StepIcon(props) {
         delay: 0
     });
 
-    console.log(ref)
-
     let classes = [styles.stepIcon]
     if(inView) {
         classes.push(styles.stepIconInView)
