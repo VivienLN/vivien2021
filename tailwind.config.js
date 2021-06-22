@@ -22,7 +22,7 @@ module.exports = {
       'lg': '980px',
     },
     fontFamily: {
-      'sans': ['Overpass', 'sans-serif']
+      'sans': ['Poppins', 'sans-serif']
     },
     fontSize: {
       'sm': '1rem',
