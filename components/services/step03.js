@@ -18,7 +18,7 @@ export default function Step03(props) {
                     <div className="flex-grow"></div>
                 </StepLeft>
             </div>
-            <div className="col-span-3 self-center">
+            <div className="col-span-3 md:col-span-2 self-center">
                 <StepContent title="3. Accompagner">
                     <p>Je continue à vous accompagner après la première livraison, pour la maintenance et les évolutions futures.</p>
                 </StepContent>

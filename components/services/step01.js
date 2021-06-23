@@ -18,7 +18,7 @@ export default function Step01(props) {
                     <StepImage imageClass="linePatch01" className="flex-grow" />
                 </StepLeft>
             </div>
-            <div className="col-span-4 self-center">
+            <div className="col-span-4 md:col-span-3 self-center">
                 <StepContent title="1. Concevoir">
                     <p className="mb-4">On prend un café et on parle de votre besoin. Je vous propose des solutions adaptées et sur-mesure.</p>
                     <p>Je m’appuie sur un réseau de spécialistes en design, UX, SEO, etc.</p>
