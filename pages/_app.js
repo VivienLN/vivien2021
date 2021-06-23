@@ -20,7 +20,7 @@ export default function App({Component, pageProps, router}) {
                 className="bg-primary inset-0 fixed z-40 origin-top-right"
                 initial={{ scaleX: 0, }}
                 exit={isBrowserNavigation ? null : { scaleX: 1 }}
-                transition={{ delay: 0, duration: .8, ease: "easeInOut" }}
+                transition={{ delay: 0, duration: .8, ease: "easeIn" }}
             />
             <motion.div
                 key={router.route + "AnimIn"}
@@ -28,7 +28,7 @@ export default function App({Component, pageProps, router}) {
                 initial={{ scaleX: 1 }}
                 animate={{ scaleX: 0 }}
                 exit={isBrowserNavigation ? null : { scaleX: 0 }}
-                transition={{ delay: 0, duration: .8, ease: "easeInOut" }}
+                transition={{ delay: 0, duration: .8, ease: "easeOut" }}
             />
 
         </AnimatePresence>
