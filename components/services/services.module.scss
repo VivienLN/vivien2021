@@ -30,6 +30,17 @@ $ratioStep03: 3/4; // column is 1/4 instead of 1/3 (max width base)
     }
 }
 
+.stepIcon { 
+    opacity: 0;
+    transform: scale(0);
+    transition: .4s ease-out;
+}
+
+.inView {
+    opacity: 1;
+    transform: scale(1);
+}
+
 .serviceImage {
     background: linear-gradient(to bottom, #ffe200, #ffe200 70%, #e7c300 75%, #e7edf1 75%) fixed;
     mask-repeat: no-repeat;
