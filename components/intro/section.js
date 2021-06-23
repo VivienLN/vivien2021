@@ -23,7 +23,7 @@ export default function Section() {
                 <Container className="h-full">
                     <div className="h-full flex flex-col justify-evenly py-10">
                         <h1 className="text-base">
-                            <span className="text-4xl font-extrabold">Salut ! Moi c'est Vivien, <br/>développeur web</span>
+                            <span className="text-4xl font-extrabold fat-shadow-secondary-light">Salut ! Moi c'est Vivien, <br/>développeur web</span>
                         </h1>
                         <div className="md:w-1/2 mx-auto">
                             <Image src="/images/profilepic.png" width={255*.75} height={287*.75} alt="Là c'est moi" />

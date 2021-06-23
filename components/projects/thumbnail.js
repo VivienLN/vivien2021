@@ -19,7 +19,7 @@ class Thumbnail extends React.Component {
                 <Link href={"/projects/" + this.props.slug} scroll={false}>
                     <a className={styles.link}>
                         <span className={"pointer-events-none absolute z-10 inset-0 flex flex-col text-center justify-center p-4 " + styles.linkText}>
-                            <span className="my-2 text-3xl font-extrabold">{ this.props.project.name }</span>
+                            <span className="my-2 text-3xl font-extrabold fat-shadow-white">{ this.props.project.name }</span>
                             <span className="my-2 font-extrabold">{ this.props.project.subtitle }</span>
                         </span>
                         <PixiImage 
@@ -27,10 +27,14 @@ class Thumbnail extends React.Component {
                             width={800}
                             height={500}
                             alt="" 
-                            transitionDelayRatio={.5}
-                            transitionDelay={20}
+                            transitionDelayRatio={.84}
+                            transitionDelay={30}
                             transitionMask={ "images/projects/mask.jpg"}
-                            gradientMap={{0: "#9ad5ff", 0.6: "#fff493", 1:"#fff"}}
+                            // gradientMap={{0: "#9ad5ff", 0.6: "#fff493", 1:"#fff"}}
+                            gradientMap={{0: "#39aee5", 0.6: "#ffec3c", 1:"#fff"}}
+                            // gradientMap={{0: "#4778db", 0.4: "#ffe92b", 1:"#fff"}}
+                            // gradientMap={{0: "#7c7c35", 0.3: "#ffff00", 1:"#fff"}}
+                            // gradientMap={{0: "#e6d300", 1:"#fff"}}
                         />
                     </a>
                 </Link>

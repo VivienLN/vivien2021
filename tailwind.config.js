@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   purge: [
     './pages/**/*.js',
@@ -52,7 +54,8 @@ module.exports = {
         darker: '#e7c300'
       },
       secondary: {
-        DEFAULT: '#95ecff',
+        DEFAULT: '#4bd2ef',
+        light: '#a9f4ff',
         dark: '#2d3751',
         darker: '#20232a',
         faded: '#5db1dc'
@@ -63,6 +66,29 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    
+    plugin(function({ addUtilities, theme }) {
+      // Fat shadow
+      let baseSelector = '.fat-shadow-'
+      let baseRuleValue = '.058em .077em 0 '
+      let utilities = {}
+      Object.keys(theme('colors')).map(colorName => {
+        let colorValue = theme('colors')[colorName]
+
+        if(typeof colorValue === "object") {
+          Object.keys(colorValue).map(colorVariantName => {
+            let selector = baseSelector + colorName
+            if(colorVariantName != 'DEFAULT') {
+              selector += '-' + colorVariantName
+            }
+            let colorVariantValue = colorValue[colorVariantName]
+            utilities[selector] = {textShadow: (baseRuleValue + colorVariantValue)}
+          })
+        } else {
+          utilities[baseSelector + colorName] = {textShadow: (baseRuleValue + colorValue)}
+        }
+      })
+
+      addUtilities(utilities)
+    })
   ],
 }

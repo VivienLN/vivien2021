@@ -30,7 +30,7 @@
     display: block;
 
     .linkText > span {
-        $t: .5s;
+        $t: .4s;
         display: block;
         opacity: 0;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -57,7 +57,7 @@
 
         canvas {
             transform: scale(1.2);
-            transition: 10s cubic-bezier(0.155, 0.320, 0.130, 1.010); //ease-out;
+            transition: 8s cubic-bezier(0.155, 0.320, 0.130, 1.010); //ease-out;
         }
     }
 }
