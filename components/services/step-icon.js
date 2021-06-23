@@ -1,5 +1,6 @@
 import styles from './services.module.scss'
 import { useInView } from 'react-intersection-observer';
+import InViewTransition from '../in-view-transition'
 
 export default function StepIcon(props) {
     var IconClass = props.icon;
@@ -7,22 +8,9 @@ export default function StepIcon(props) {
         return null;
     }
 
-    const { ref, inView, entry } = useInView({
-        /* Optional options */
-        threshold: 1,
-        rootMargin: '0px 0px -140px',
-        triggerOnce: true,
-        delay: 0
-    });
-
-    let classes = [styles.stepIcon]
-    if(inView) {
-        classes.push(styles.stepIconInView)
-    }
-
     return (
-        <div ref={ref} className={classes.join(' ')}>
-            {IconClass && <IconClass />}
-        </div>
+        <InViewTransition className={styles.stepIcon + " absolute left-0 top-0 z-20"}>
+                {IconClass && <IconClass />}
+        </InViewTransition>
     )
 }

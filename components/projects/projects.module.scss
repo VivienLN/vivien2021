@@ -8,7 +8,7 @@
     .projectThumbnail {
         opacity: 0;
         transition: .8s cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        transform: translateY(40px);
+        transform: translateY(60px);
         @for $i from 1 to 9 {
             &:nth-child(#{$i}) {
                 transition-delay: .3s * ($i - 1);
