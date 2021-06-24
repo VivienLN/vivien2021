@@ -12,7 +12,7 @@ export default function Project() {
                 <ProjectSummary>                    
                     <SummaryParagraph>Le fil est une plateforme développée sur-mesure pour mettre en relation la marque L'Oréal et ses influenceurs.</SummaryParagraph>
                     <SummaryParagraph>Ceux-ci peuvent s'engager pour des opérations spéciales, devenant ambassadeurs auprès de leur communauté.</SummaryParagraph>
-                    <SummaryParagraph>S'adressant principalement aux influenceurs modes et beauté sur Instagram, la plateforme propose également des articles sur les produits, nouveautés et guidelines de la marque. C'est donc un CMS complet qu'il a fallu développer.</SummaryParagraph>
+                    <SummaryParagraph>S'adressant principalement aux influenceurs mode et beauté sur Instagram, la plateforme propose également des articles sur les produits, nouveautés et guidelines de la marque. C'est donc un CMS complet qu'il a fallu développer.</SummaryParagraph>
                 </ProjectSummary>
                 <br/>
                 <br/>

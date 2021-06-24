@@ -14,5 +14,20 @@
     strong {
         @apply font-extrabold;
     }
+    .link {
+        @apply text-secondary-dark;
+        @apply font-extrabold;
+        @apply relative;
+        left: 0;
+        top: 0;
+        transition: .1s linear;
+        text-shadow: 0 0 0 #f5ce00;
+        &:hover, &:active {
+            @apply text-black;
+            left: -2px;
+            top: -2px;
+            text-shadow: 2px 2px 0 #f5ce00;
+        }
+    }
 }
 
