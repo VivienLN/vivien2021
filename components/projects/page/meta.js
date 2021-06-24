@@ -4,9 +4,13 @@ import InViewTransition from '../../in-view-transition'
 
 export default function Meta(props) {
     return (
-        
         <div className="relative z-10 bg-white">
-            <div className="bg-primary py-12 md:py-20 transform -skew-y-3 origin-top-left">
+            <style jsx>{`
+                .boxShadow {
+                    box-shadow: 0px -4px 4px rgb(0 0 0 / 10%);
+                }
+            `}</style>
+            <div className="boxShadow bg-primary py-12 md:py-20 transform -skew-y-3 origin-top-left">
                 <div className="transform skew-y-3 py-8">
                     <InViewTransition>
                         <Container>
@@ -20,6 +24,5 @@ export default function Meta(props) {
                 </div>
             </div>
         </div>
-        
     )
 }

@@ -17,7 +17,7 @@ class Thumbnail extends React.Component {
         return (
             <div className={"overflow-hidden rounded relative " + styles.projectThumbnail }>
                 <Link href={"/projects/" + this.props.slug} scroll={false}>
-                    <a className={"bg-secondary " + styles.link}>
+                    <a className={"bg-primary " + styles.link}>
                         <span className={"pointer-events-none absolute z-10 inset-0 flex flex-col text-center justify-center p-4 " + styles.linkText}>
                             <span className="my-2 text-3xl font-extrabold fat-shadow-white">{ this.props.project.name }</span>
                             <span className="my-2 font-extrabold">{ this.props.project.subtitle }</span>

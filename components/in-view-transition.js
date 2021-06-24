@@ -15,7 +15,7 @@ export default function InViewTransition(props) {
                 div {
                     opacity: 0;
                     transform-origin: top left;
-                    transform: translateY(80px) skewY(2deg);
+                    transform: translateY(80px) skewY(4deg);
                     transition: 1s cubic-bezier(0.165, 0.840, 0.440, 1.000);
                 }                
                 div.inView {
