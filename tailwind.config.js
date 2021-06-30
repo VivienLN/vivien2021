@@ -27,12 +27,12 @@ module.exports = {
       'sans': ['Poppins', 'sans-serif']
     },
     fontSize: {
-      'sm': '1rem',
-      'base': '1.125rem',
-      'xl': '1.375rem',
-      '2xl': '2rem',
-      '3xl': '3.25rem',
-      '4xl': '4rem'
+      'sm': '.9rem',
+      'base': '1rem',
+      'xl': '1.2rem',
+      '2xl': '1.8rem',
+      '3xl': '2.5rem',
+      '4xl': '3.5rem'
     },
     fontWeight: {
       'normal': 400,
