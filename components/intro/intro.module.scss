@@ -1,0 +1,13 @@
+// height = 100vh * tan(3deg) // rounded
+.introEndBg {
+    height: 5.25vw;
+    bottom: -5.25vw;
+}
+@screen md {
+    .introHeader {
+        height: 95vh;
+    }
+    .introContent {
+        height: 95vh;
+    }
+}

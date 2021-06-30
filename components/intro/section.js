@@ -1,24 +1,11 @@
 import Image from 'next/image'
 import Container from '../container'
+import styles from './intro.module.scss'
 
 export default function Section() {
     return (
-        <header className="relative">
-            <style jsx>{`
-                header {
-                    min-height: 95vh;
-                }
-                .introContent {
-                    min-height: 95vh;
-                }
-                // height = 100vh * tan(3) // rounded
-                .introEndBg {
-                    height: 5.25vw;
-                    bottom: -5.25vw;
-                }
-            `}</style>
-
-            <div className="introContent text-center bg-primary md:fixed top-0 left-0 right-0">
+        <header className={"relative " + styles.introHeader}>
+            <div className={"text-center bg-primary md:fixed top-0 left-0 right-0 " + styles.introContent}>
                 <Container className="h-full">
                     <div className="h-full py-20 md:py-0 flex flex-col justify-evenly pt-10 pb-20">
                         <h1 className="text-base">
@@ -35,14 +22,14 @@ export default function Section() {
                                 Mes outils de choix sont <strong>Laravel</strong> et <strong>Wordpress</strong>.
                             </p>
                             <p>
-                                Continuez pour en savoir plus ou allez <a href="#">voir mon CV</a>.
+                                Continuez pour en savoir plus ou allez voir <a target="_blank" className="link link-white" href="https://www.linkedin.com/in/vivien-le-neez-8364236a/">mon profil linkedin</a> ou <a target="_blank" className="link link-white" href="https://www.malt.fr/profile/vivienln">ma page malt</a>.
                             </p>
                         </div>
                     </div>
                 </Container>
             </div>
 
-            <div className="bg-white absolute left-0 right-0 z-10 items-center transform -skew-y-3 origin-top-left introEndBg"></div>
+            <div className={"bg-white absolute left-0 right-0 z-10 items-center transform -skew-y-3 origin-top-left " + styles.introEndBg }></div>
         </header>
     )
 }
