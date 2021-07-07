@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 export default function InViewTransition(props) {
     const { ref, inView, entry } = useInView({
         /* Optional options */
-        threshold: .75,
+        threshold: .5,
         triggerOnce: true,
         delay: props.delay || 0
     });
@@ -15,8 +15,8 @@ export default function InViewTransition(props) {
                 div {
                     opacity: 0;
                     transform-origin: top left;
-                    transform: translateY(80px) skewY(4deg);
-                    transition: 1s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+                    transform: translateY(60px) skewY(4deg);
+                    transition: .8s cubic-bezier(0.165, 0.840, 0.440, 1.000);
                 }                
                 div.inView {
                     opacity: 1;
