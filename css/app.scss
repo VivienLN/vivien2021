@@ -23,6 +23,8 @@
         transition: .1s linear;
         text-shadow: 0 0 0 #f5ce00;
         text-decoration: underline;
+        padding-top: .2rem;
+        padding-bottom: .2rem;
         &:hover, &:active {
             @apply text-black;
             left: -2px;
