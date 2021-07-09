@@ -15,7 +15,7 @@ export default function Section() {
                         </InViewTransition>
                     </div>
                     <div className="col-span-1 mb-16">                     
-                        <InViewTransition>
+                        <InViewTransition delay={500}>
                             <h3 className="text-xl mb-8 font-extrabold fat-shadow-secondary-light">Envie d'en savoir plus&nbsp;?</h3>
                             <p className="mb-4">Venez me faire coucou par là&nbsp;:</p>
                             <ul>
