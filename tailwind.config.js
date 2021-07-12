@@ -32,7 +32,7 @@ module.exports = {
       'xl': '1.2rem',
       '2xl': '1.8rem',
       '3xl': '2.5rem',
-      '4xl': '3.5rem'
+      '4xl': '4rem'
     },
     fontWeight: {
       'normal': 400,

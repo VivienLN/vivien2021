@@ -26,7 +26,6 @@ export default function TitleBanner(props) {
                     <div className="text-center">
                         <h1 className="text-2xl md:text-4xl font-extrabold">{ props.title }</h1>
                         <p className="md:text-xl font-extrabold">{ props.subtitle }</p>
-                        <h2><Link href="/#section-projects" scroll={false}><a>Return to index</a></Link></h2>
                     </div>
                 </Container>
             </div>

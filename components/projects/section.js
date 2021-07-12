@@ -11,7 +11,7 @@ export default function Section() {
     });
     return (
         <SectionBase title="Réalisations" id="section-projects">
-            <div ref={ref} className={"overflow-hidden width-full "  + styles.projectsSection + " " + (inView ? styles.inView : "")}>
+            <div ref={ref} className={"overflow-hidden width-full -mt-12 "  + styles.projectsSection + " " + (inView ? styles.inView : "")}>
                 <div className={"grid grid-cols-1 md:grid-cols-3 gap-2 transform origin-bottom-left md:-rotate-3 " + styles.projectsGrid}>
                     { 
                         Object.keys(projectsData).map(

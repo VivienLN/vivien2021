@@ -21,7 +21,8 @@
         left: 0;
         top: 0;
         transition: .1s linear;
-        text-shadow: 0 0 0 #f5ce00;
+        // text-shadow: 0 0 0 #f5ce00;
+        filter: drop-shadow(0 0 0 #f5ce00);
         text-decoration: underline;
         padding-top: .2rem;
         padding-bottom: .2rem;
@@ -29,13 +30,16 @@
             @apply text-black;
             left: -2px;
             top: -2px;
-            text-shadow: 2px 2px 0 #f5ce00;
+            // text-shadow: 2px 2px 0 #f5ce00;
+            filter: drop-shadow(2px 2px 0 #f5ce00);
             text-decoration: none;
         }
         &.link-white {
-            text-shadow: 0 0 0 #fff;
+            // text-shadow: 0 0 0 #fff;
+            filter: drop-shadow(0 0 0 #fff);
             &:hover, &:active {
-                text-shadow: 2px 2px 0 #fff;
+                // text-shadow: 2px 2px 0 #fff
+                filter: drop-shadow(2px 2px 0 #fff);
             }
         }
     }
