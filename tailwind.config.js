@@ -66,6 +66,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    require('@tailwindcss/aspect-ratio'),
     plugin(function({ addUtilities, theme }) {
       // Fat shadow
       let baseSelector = '.fat-shadow-'

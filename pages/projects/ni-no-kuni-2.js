@@ -1,16 +1,23 @@
 
 import Layout from "../../components/layout"
+import ProjectBackground from "../../components/projects/page/background"
 import ProjectHeader from "../../components/projects/page/header"
 import ProjectSummary from "../../components/projects/page/summary"
+import SummaryParagraph from "../../components/projects/page/summary-paragraph"
+import Container from "../../components/container"
 
 export default function Project() {
     return (
         <Layout>
             <ProjectHeader slug="ni-no-kuni-2" />
-            <ProjectSummary>
-                <p className="mb-4">Pour la sortie du jeu Ni No Kuni 2, nous avons développé un site officiel en une page.</p>
-                <p>Le site devait être 100% statique et pouvoir tourner sans aucun code serveur, tout en offrant une expérience immersive en six langues.</p>
-            </ProjectSummary>
+            <ProjectBackground>
+                <Container>
+                    <ProjectSummary>
+                        <SummaryParagraph>Pour la sortie du jeu Ni No Kuni 2, nous avons développé un site officiel en une page.</SummaryParagraph>
+                        <SummaryParagraph>Le site devait être 100% statique et pouvoir tourner sans aucun code serveur, tout en offrant une expérience immersive en six langues.</SummaryParagraph>
+                    </ProjectSummary>
+                </Container>
+            </ProjectBackground>
         </Layout>
     )
 }
