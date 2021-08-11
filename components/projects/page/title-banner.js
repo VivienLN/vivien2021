@@ -6,10 +6,6 @@ export default function TitleBanner(props) {
         <>
             <style jsx>{`
                 .titleBanner {
-                    background: url(${ props.url }) no-repeat fixed center center;
-                    background-size: cover;
-                    -webkit-text-fill-color: transparent;
-                    -webkit-background-clip: text;
                     position: fixed;
                     top: 20vh;
                     width: 100%;
@@ -23,9 +19,9 @@ export default function TitleBanner(props) {
 
             <div className="titleBanner">
                 <Container>
-                    <div className="text-center">
-                        <h1 className="text-2xl md:text-4xl font-extrabold">{ props.title }</h1>
-                        <p className="md:text-xl font-extrabold">{ props.subtitle }</p>
+                    <div className="">
+                        <h1 className="text-3xl fat-shadow-black md:text-4xl font-extrabold ">{ props.title }</h1>
+                        <p className="md:text-xl fat-shadow-black font-extrabold text-primary">{ props.subtitle }</p>
                     </div>
                 </Container>
             </div>

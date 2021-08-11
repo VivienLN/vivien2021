@@ -1,8 +1,8 @@
 import Head from "next/head"
-import Meta from "./meta";
-import TitleBanner from "./title-banner";
-import HeroBanner from "./hero-banner";
-import ButtonBack from "./button-back";
+import Meta from "./meta"
+import TitleBanner from "./title-banner"
+import HeroBanner from "./hero-banner"
+import ButtonBack from "./button-back"
 import projectsData from "../../../resources/projects"
 
 export default function Header(props) {
@@ -10,7 +10,7 @@ export default function Header(props) {
     let heroUrl = "/images/projects/" + props.slug + "/hero.jpg"
 
     return (
-        <header>
+        <header className="relative">
             <Head>
                 <title>{ data.name } - Vivien</title>
             </Head>
