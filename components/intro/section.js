@@ -9,9 +9,9 @@ export default function Section() {
                 <Container className="h-full">
                     <div className="h-full py-20 md:py-0 flex flex-col justify-evenly pt-10 pb-20">
                         <h1 className="text-base">
-                            <span className="text-2xl md:text-3xl font-extrabold"><strong className="fat-shadow-secondary-dark">Salut !</strong><br/> Je suis Vivien, développeur web</span>
+                            <span className="text-2xl md:text-3xl font-extrabold"><strong className="fat-shadow-secondary-dark">Hello !</strong><br/> Je suis Vivien, développeur web</span>
                         </h1>
-                        <div>
+                        <div className="text-xl">
                             <p className="mb-4">
                                 Depuis 12 ans, j'accompagne des entreprises et des agences dans la création de sites &amp; applications web.
                             </p>
