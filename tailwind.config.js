@@ -79,7 +79,7 @@ module.exports = {
     plugin(function({ addUtilities, theme }) {
       // Fat shadow
       let baseSelector = '.fat-shadow-'
-      let baseRuleValue = '.058em .077em 0 '
+      let baseRuleValue = 'calc(1px + .058em) calc(1px + .077em) 0 '
       let utilities = {}
       Object.keys(theme('colors')).map(colorName => {
         let colorValue = theme('colors')[colorName]

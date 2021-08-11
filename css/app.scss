@@ -30,9 +30,9 @@
         &:hover, &:active {
             @apply text-white;
             left: -2px;
-            top: -2px;
+            top: -3px;
             // text-shadow: 2px 2px 0 #f5ce00;
-            filter: drop-shadow(2px 2px 0 #00688f);
+            filter: drop-shadow(2px 3px 0 #00688f);
             text-decoration: none;
         }
     }
