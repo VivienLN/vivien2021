@@ -52,7 +52,10 @@ module.exports = {
         DEFAULT: '#666',
         dark: '#666',
         darker: '#222',
-        darkest: '#091011'
+        darkest: '#091011',
+        light: '#999',
+        lighter: '#bbb',
+        lightest: '#ddd',
       },
       primary: {
         DEFAULT: '#ffe200',
