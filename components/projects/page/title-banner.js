@@ -29,8 +29,8 @@ export default function TitleBanner(props) {
                     </div>
                 </Container>
             </div>
-            <div className="bg-white">
-                <div className="titleBannerBg bg-white pt-8 pb-12 items-center transform -skew-y-3 origin-top-right">
+            <div className="bg-black">
+                <div className="titleBannerBg bg-black pt-8 pb-12 items-center transform -skew-y-3 origin-top-right">
                 </div>
             </div>
         </>

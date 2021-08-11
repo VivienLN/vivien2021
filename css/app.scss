@@ -10,37 +10,30 @@
 @layer base {
     body {
         @apply text-base;
+        @apply bg-black
     }
     strong {
         @apply font-extrabold;
     }
     .link {
-        @apply text-secondary-dark;
+        @apply text-primary;
         @apply font-extrabold;
         @apply relative;
         left: 0;
         top: 0;
         transition: .1s linear;
         // text-shadow: 0 0 0 #f5ce00;
-        filter: drop-shadow(0 0 0 #f5ce00);
+        filter: drop-shadow(0 0 0 #00688f);
         text-decoration: underline;
         padding-top: .2rem;
         padding-bottom: .2rem;
         &:hover, &:active {
-            @apply text-black;
+            @apply text-white;
             left: -2px;
             top: -2px;
             // text-shadow: 2px 2px 0 #f5ce00;
-            filter: drop-shadow(2px 2px 0 #f5ce00);
+            filter: drop-shadow(2px 2px 0 #00688f);
             text-decoration: none;
-        }
-        &.link-white {
-            // text-shadow: 0 0 0 #fff;
-            filter: drop-shadow(0 0 0 #fff);
-            &:hover, &:active {
-                // text-shadow: 2px 2px 0 #fff
-                filter: drop-shadow(2px 2px 0 #fff);
-            }
         }
     }
 }

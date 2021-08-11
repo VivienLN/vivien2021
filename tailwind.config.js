@@ -21,7 +21,7 @@ module.exports = {
     screens: {
       'sm': '520px',
       'md': '768px',
-      'lg': '980px',
+      'lg': '1200px',
     },
     fontFamily: {
       'sans': ['Poppins', 'sans-serif']
@@ -44,10 +44,16 @@ module.exports = {
       'relaxed': 1.5
     },
     colors: {
-      base: '#000',
+      base: '#fff',
       white: '#fff',
       black: '#000',
       transparent: 'transparent',
+      gray: {
+        DEFAULT: '#666',
+        dark: '#666',
+        darker: '#222',
+        darkest: '#091011'
+      },
       primary: {
         DEFAULT: '#ffe200',
         dark: '#f5ce00',
