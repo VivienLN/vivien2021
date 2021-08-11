@@ -17,7 +17,7 @@ export default function Footer(props) {
             
     
             <div className="bg-black">
-                <div className="footerSlanted bg-gray-darkest transform -skew-y-3 origin-top-left"></div>
+                <div className="footerSlanted bg-black transform -skew-y-3 origin-top-left"></div>
                 <div className="footerContent text-right">
                     <Container>
                         Il n'y a plus rien à voir ici, mais vous pouvez toujours <button className="link link-white" onClick={e => (typeof window !== "undefined") && window.scrollTo({top: 0, behavior: "smooth"})}>remonter</button>.
