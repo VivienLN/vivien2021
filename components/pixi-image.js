@@ -138,14 +138,16 @@ class PixiImage extends React.Component {
                 >
                     <Sprite 
                         image={this.props.src} 
-                        x={0} 
-                        y={0} 
+                        x={this.props.width / 2} 
+                        y={this.props.height / 2} 
+                        anchor={0.5}
                     />
                     <Sprite 
                         filters = {[this.gradientMapFilter, this.transitionFilter]}
                         image={this.props.src} 
-                        x={0} 
-                        y={0} 
+                        anchor={0.5}
+                        x={this.props.width / 2} 
+                        y={this.props.height / 2} 
                     />
                 </Stage>
             </span>
