@@ -6,6 +6,7 @@ import ProjectSummary from "../../components/projects/page/summary"
 import SummaryParagraph from "../../components/projects/page/summary-paragraph"
 import Video from "../../components/projects/page/video"
 import Container from "../../components/container"
+import AnimatedNumber from "../../components/projects/page/animated-number"
 
 export default function Project() {
     return (
@@ -20,6 +21,8 @@ export default function Project() {
                         <SummaryParagraph>J'ai principalement participé à la <strong>conception</strong> (game design) et au <strong>développement</strong> du jeu.</SummaryParagraph>
                     </ProjectSummary>
                     <Video url="https://player.vimeo.com/video/240979266" controls muted={false} playsinline={false} playing={false} />
+                    <AnimatedNumber value={1176609} label="parties jouées" />
+                    <AnimatedNumber value={17} label="jours d'opération" align="right" />
                 </Container>
             </ProjectBackground>
         </Layout>
