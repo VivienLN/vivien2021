@@ -13,7 +13,7 @@ export default function Section() {
                         </h1>
                         <div className="text-xl">
                             <p className="mb-4">
-                                Depuis 12 ans, j'accompagne des entreprises et des agences dans la création de sites &amp; applications web.
+                                Depuis 12 ans, j'accompagne des entreprises et des agences dans la création de sites et applications web.
                             </p>
                             <p className="mb-4">
                                 Mes outils de choix sont <strong>Laravel</strong> et <strong>Wordpress</strong>.
