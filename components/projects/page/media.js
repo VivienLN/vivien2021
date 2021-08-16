@@ -5,7 +5,7 @@ export default function Media(props) {
         <InViewTransition>
             <style jsx>{`
                 .media {
-                    box-shadow: 0 10px 60px rgba(0, 0, 0, .15);
+                    box-shadow: 0 10px 60px rgba(0, 0, 0, .3);
                 }
             `}</style>
             <div className="media overflow-hidden rounded">
