@@ -23,8 +23,8 @@ export default function Project() {
                     <Video url="/images/projects/sinking-city/sinking-city-scroll.mp4" />
                     <Video url="/images/projects/sinking-city/sinking-city-gallery.mp4" />
                     <Image src="/images/projects/sinking-city/buy-page.jpg" width={960} height={654} />
-                    <Links slug="sinking-city" />
                 </Container>
+                <Links slug="sinking-city" />
             </ProjectBackground>
         </Layout>
     )

@@ -4,11 +4,8 @@ import IntroSection from '../components/intro/section'
 import ServicesSection from '../components/services/section'
 import ProjectsSection from '../components/projects/section'
 import ContactSection from '../components/contact/section'
-import projectsDataHelpers from '../helpers/projects-data-helpers'
 
 export default function Home() {
-  const projects = projectsDataHelpers.getActive()
-
   return (
     <Layout>
       <Head>
@@ -18,7 +15,7 @@ export default function Home() {
 
       <IntroSection />
       <ServicesSection />
-      <ProjectsSection projects={projects} />
+      <ProjectsSection />
       <ContactSection />
     </Layout>
   )
