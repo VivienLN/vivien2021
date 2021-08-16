@@ -1,5 +1,6 @@
-export default {
-    "sinking-city": {
+export default [
+    {
+        slug: "sinking-city",
         active: true,
         name: "The Sinking City",
         subtitle: "Site officiel",
@@ -38,8 +39,9 @@ export default {
             },
         ]
     },
-    "xbox-pgw": {
-        active: true,
+    {
+        slug: "xbox-pgw",
+        active: !true,
         name: "Xbox × PGW",
         subtitle: "Chatbot & jeu mobile",
         meta: [
@@ -78,7 +80,8 @@ export default {
             },
         ]
     },
-    "le-fil-loreal": {
+    {
+        slug: "le-fil-loreal",
         active: true,
         name: "Le Fil L'Oréal",
         subtitle: "Plateforme influenceurs",
@@ -118,7 +121,8 @@ export default {
             },
         ]
     },
-    "ni-no-kuni-2": {
+    {
+        slug: "ni-no-kuni-2",
         active: true,
         name: "Ni No Kuni 2",
         subtitle: "Site officiel",
@@ -158,7 +162,8 @@ export default {
             },
         ]
     },
-    "adidas-decathlon": {
+    {
+        slug: "adidas-decathlon",
         active: true,
         name: "Adidas × Decathlon",
         subtitle: "Pages boutique",
@@ -196,7 +201,8 @@ export default {
             },
         ]
     },
-    "les-very-goods": {
+    {
+        slug: "les-very-goods",
         active: true,
         name: "Les Very Goods",
         subtitle: "Guides d'achat & affiliation",
@@ -244,4 +250,4 @@ export default {
             }
         ]
     },
-}
+]

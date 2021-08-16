@@ -7,6 +7,7 @@ import SummaryParagraph from "../../components/projects/page/summary-paragraph"
 import Video from "../../components/projects/page/video"
 import Image from "../../components/projects/page/image"
 import Container from "../../components/container"
+import Links from "../../components/projects/page/links"
 
 export default function Project() {
     return (
@@ -22,6 +23,7 @@ export default function Project() {
                     <Video url="/images/projects/sinking-city/sinking-city-scroll.mp4" />
                     <Video url="/images/projects/sinking-city/sinking-city-gallery.mp4" />
                     <Image src="/images/projects/sinking-city/buy-page.jpg" width={960} height={654} />
+                    <Links slug="sinking-city" />
                 </Container>
             </ProjectBackground>
         </Layout>
