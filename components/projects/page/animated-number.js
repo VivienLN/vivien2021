@@ -26,8 +26,17 @@ export default function AnimatedNumber(props) {
         return () => clearInterval(id);
     });
 
+    // Remove some padding between the numbers
+    let paddingClasses = []
+    if(!props.isFirst) {
+        paddingClasses.push('md:pt-0')
+    }
+    if(!props.isLast) {
+        paddingClasses.push('md:pb-0')
+    }
+
     return (
-        <Section>
+        <Section className={paddingClasses.join(' ')}>
             <style jsx>{`
                 .hexagon :global(svg path) {
                     transition: 2.5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
@@ -51,7 +60,7 @@ export default function AnimatedNumber(props) {
                                 </div>
                                 <div className="absolute inset-0 flex flex-col justify-center text-center">
                                     <div className="text-3xl font-extrabold">{ pretiffyValue(currentValue) }</div>
-                                    <div className="text-base">{ props.label }</div>
+                                    <div className="text-xl">{ props.label }</div>
                                 </div>
                             </div>
                         </InViewTransition>

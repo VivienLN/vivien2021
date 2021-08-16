@@ -21,8 +21,8 @@ export default function Project() {
                         <SummaryParagraph>J'ai principalement participé à la <strong>conception</strong> (game design) et au <strong>développement</strong> du jeu.</SummaryParagraph>
                     </ProjectSummary>
                     <Video url="https://player.vimeo.com/video/240979266" controls muted={false} playsinline={false} playing={false} />
-                    <AnimatedNumber value={1176609} label="parties jouées" />
-                    <AnimatedNumber value={17} label="jours d'opération" align="right" />
+                    <AnimatedNumber isFirst value={1176609} label="parties jouées" />
+                    <AnimatedNumber isLast value={17} label="jours d'opération" align="right" />
                 </Container>
             </ProjectBackground>
         </Layout>
