@@ -7,7 +7,7 @@ import projectsDataHelpers from '../../../helpers/projects-data-helpers'
 import { useRouter } from 'next/router'
 
 export default function Header(props) {
-    let slug = useRouter().asPath.replace(/^\/projects\//, '')
+    let slug = props.slug
     let data = projectsDataHelpers.getBySlug(slug, true)
     let heroUrl = "/images/projects/" + slug + "/hero.jpg"
 

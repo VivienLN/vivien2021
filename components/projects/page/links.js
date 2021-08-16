@@ -10,7 +10,7 @@ export default function Links(props) {
         threshold: .3,
         triggerOnce: true,
     })
-    let slug = useRouter().asPath.replace(/^\/projects\//, '')
+    let slug = props.slug
     let prevProject = projectsDataHelpers.getPreviousBySlug(slug)
     let nextProject = projectsDataHelpers.getNextBySlug(slug)
 

@@ -41,7 +41,7 @@ export default [
     },
     {
         slug: "xbox-pgw",
-        active: !true,
+        active: true,
         name: "Xbox × PGW",
         subtitle: "Chatbot & jeu mobile",
         meta: [

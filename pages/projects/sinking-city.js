@@ -12,7 +12,7 @@ import Links from "../../components/projects/page/links"
 export default function Project() {
     return (
         <Layout>
-            <ProjectHeader />
+            <ProjectHeader slug="sinking-city" />
             <ProjectBackground>
                 <Container>
                     <ProjectSummary>
@@ -24,7 +24,7 @@ export default function Project() {
                     <Video url="/images/projects/sinking-city/sinking-city-gallery.mp4" />
                     <Image src="/images/projects/sinking-city/buy-page.jpg" width={960} height={654} />
                 </Container>
-                <Links />
+                <Links slug="sinking-city" />
             </ProjectBackground>
         </Layout>
     )

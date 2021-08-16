@@ -10,7 +10,7 @@ import Links from "../../components/projects/page/links"
 export default function Project() {
     return (
         <Layout>
-            <ProjectHeader />
+            <ProjectHeader slug="ni-no-kuni-2" />
             <ProjectBackground>
                 <Container>
                     <ProjectSummary>
@@ -18,7 +18,7 @@ export default function Project() {
                         <SummaryParagraph>Le site devait être 100% statique et pouvoir tourner sans aucun code serveur, tout en offrant une expérience immersive en six langues.</SummaryParagraph>
                     </ProjectSummary>
                 </Container>
-                <Links />
+                <Links slug="ni-no-kuni-2" />
             </ProjectBackground>
         </Layout>
     )

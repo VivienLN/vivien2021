@@ -12,7 +12,7 @@ import Links from "../../components/projects/page/links"
 export default function Project() {
     return (
         <Layout>
-            <ProjectHeader />
+            <ProjectHeader slug="xbox-pgw" />
             <ProjectBackground>
                 <Container>
                     <ProjectSummary>
@@ -25,7 +25,7 @@ export default function Project() {
                     <AnimatedNumber isFirst value={1176609} label="parties jouées" />
                     <AnimatedNumber isLast value={17} label="jours d'opération" align="right" />
                 </Container>
-                <Links />
+                <Links slug="xbox-pgw" />
             </ProjectBackground>
         </Layout>
     )

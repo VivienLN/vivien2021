@@ -10,7 +10,7 @@ import Links from "../../components/projects/page/links"
 export default function Project() {
     return (
         <Layout>
-            <ProjectHeader />
+            <ProjectHeader slug="les-very-goods" />
             <ProjectBackground>
                 <Container>
                     <ProjectSummary>
@@ -19,7 +19,7 @@ export default function Project() {
                         <SummaryParagraph>Le back-office est construit sur-mesure pour les rédacteurs, et offre des fonctionnalités <strong>spécifiques à l'API amazon</strong> : sélection de produit, mise à jour des produits en rupture de stock, sélection des variantes et leurs prix, etc.</SummaryParagraph>
                     </ProjectSummary>
                 </Container>
-                <Links />
+                <Links slug="les-very-goods" />
             </ProjectBackground>
         </Layout>
     )

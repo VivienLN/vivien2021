@@ -9,7 +9,7 @@ import Links from "../../components/projects/page/links"
 export default function Project() {
     return (
         <Layout>
-            <ProjectHeader />
+            <ProjectHeader slug="le-fil-loreal" />
             <ProjectBackground>
                 <Container>
                     <ProjectSummary>                    
@@ -18,7 +18,7 @@ export default function Project() {
                         <SummaryParagraph>S'adressant principalement aux influenceurs mode et beauté sur Instagram, la plateforme propose également des articles sur les produits, nouveautés et guidelines de la marque. C'est donc un CMS complet qu'il a fallu développer.</SummaryParagraph>
                     </ProjectSummary>
                 </Container>
-                <Links />
+                <Links slug="le-fil-loreal" />
             </ProjectBackground>
         </Layout>
     )
