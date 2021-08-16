@@ -4,10 +4,13 @@ import TitleBanner from "./title-banner"
 import HeroBanner from "./hero-banner"
 import ButtonBack from "./button-back"
 import projectsDataHelpers from '../../../helpers/projects-data-helpers'
+import { useRouter } from 'next/router'
 
 export default function Header(props) {
-    let data = projectsDataHelpers.getBySlug(props.slug, true)
-    let heroUrl = "/images/projects/" + props.slug + "/hero.jpg"
+    let slug = useRouter().asPath.replace(/^\/projects\//, '')
+    let data = projectsDataHelpers.getBySlug(slug, true)
+    let heroUrl = "/images/projects/" + slug + "/hero.jpg"
+
     return (
         <header className="relative">
             <Head>

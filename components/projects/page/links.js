@@ -2,16 +2,17 @@ import styles from '../projects.module.scss'
 import projectsDataHelpers from '../../../helpers/projects-data-helpers'
 import { useInView } from 'react-intersection-observer';
 import ProjectThumbnail from '../thumbnail'
-import Section from './section'
 import SectionBase from '../../section'
+import { useRouter } from 'next/router'
 
 export default function Links(props) {
     const { ref, inView, entry } = useInView({
         threshold: .3,
         triggerOnce: true,
     })
-    let prevProject = projectsDataHelpers.getPreviousBySlug(props.slug)
-    let nextProject = projectsDataHelpers.getNextBySlug(props.slug)
+    let slug = useRouter().asPath.replace(/^\/projects\//, '')
+    let prevProject = projectsDataHelpers.getPreviousBySlug(slug)
+    let nextProject = projectsDataHelpers.getNextBySlug(slug)
 
     return (
         
