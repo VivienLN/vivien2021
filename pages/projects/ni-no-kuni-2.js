@@ -5,11 +5,12 @@ import ProjectHeader from "../../components/projects/page/header"
 import ProjectSummary from "../../components/projects/page/summary"
 import SummaryParagraph from "../../components/projects/page/summary-paragraph"
 import Container from "../../components/container"
+import Links from "../../components/projects/page/links"
 
 export default function Project() {
     return (
         <Layout>
-            <ProjectHeader slug="ni-no-kuni-2" />
+            <ProjectHeader />
             <ProjectBackground>
                 <Container>
                     <ProjectSummary>
@@ -17,6 +18,7 @@ export default function Project() {
                         <SummaryParagraph>Le site devait être 100% statique et pouvoir tourner sans aucun code serveur, tout en offrant une expérience immersive en six langues.</SummaryParagraph>
                     </ProjectSummary>
                 </Container>
+                <Links />
             </ProjectBackground>
         </Layout>
     )

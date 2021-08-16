@@ -7,11 +7,12 @@ import SummaryParagraph from "../../components/projects/page/summary-paragraph"
 import Video from "../../components/projects/page/video"
 import Container from "../../components/container"
 import AnimatedNumber from "../../components/projects/page/animated-number"
+import Links from "../../components/projects/page/links"
 
 export default function Project() {
     return (
         <Layout>
-            <ProjectHeader slug="xbox-pgw" />
+            <ProjectHeader />
             <ProjectBackground>
                 <Container>
                     <ProjectSummary>
@@ -24,7 +25,8 @@ export default function Project() {
                     <AnimatedNumber isFirst value={1176609} label="parties jouées" />
                     <AnimatedNumber isLast value={17} label="jours d'opération" align="right" />
                 </Container>
+                <Links />
             </ProjectBackground>
         </Layout>
     )
-}
+} 

@@ -4,11 +4,12 @@ import ProjectHeader from "../../components/projects/page/header"
 import ProjectSummary from "../../components/projects/page/summary"
 import SummaryParagraph from "../../components/projects/page/summary-paragraph"
 import Container from "../../components/container"
+import Links from "../../components/projects/page/links"
 
 export default function Project() {
     return (
         <Layout>
-            <ProjectHeader slug="le-fil-loreal" />
+            <ProjectHeader />
             <ProjectBackground>
                 <Container>
                     <ProjectSummary>                    
@@ -17,6 +18,7 @@ export default function Project() {
                         <SummaryParagraph>S'adressant principalement aux influenceurs mode et beauté sur Instagram, la plateforme propose également des articles sur les produits, nouveautés et guidelines de la marque. C'est donc un CMS complet qu'il a fallu développer.</SummaryParagraph>
                     </ProjectSummary>
                 </Container>
+                <Links />
             </ProjectBackground>
         </Layout>
     )
