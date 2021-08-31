@@ -82,7 +82,7 @@ export default [
     },
     {
         slug: "le-fil-loreal",
-        active: true,
+        active: false,
         name: "Le Fil L'Oréal",
         subtitle: "Plateforme influenceurs",
         meta: [
@@ -164,7 +164,7 @@ export default [
     },
     {
         slug: "adidas-decathlon",
-        active: true,
+        active: false,
         name: "Adidas × Decathlon",
         subtitle: "Pages boutique",
         meta: [

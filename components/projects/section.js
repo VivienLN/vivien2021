@@ -9,7 +9,12 @@ export default function Section(props) {
         threshold: .3,
         triggerOnce: true,
     })
-    const projects = projectsDataHelpers.getActive()
+    var projects = projectsDataHelpers.getActive()
+    // Add empty projects to have a multiple of 3 (because there are 3 per line)
+    while(projects.length < Math.ceil(projects.length / 3) * 3) {
+        projects.push({})
+    }
+
     return (
         <SectionBase title="Réalisations" id="section-projects">
             <div ref={ref} className={"overflow-hidden width-full -mt-12 "  + styles.projectsSection + " " + (inView ? styles.inView : "")}>

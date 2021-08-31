@@ -60,6 +60,8 @@
     }
 
     &:active, &:focus {
+        @apply bg-secondary-dark;
+        
         .linkText {
             opacity: 0;
             transform: scale(1.3);
