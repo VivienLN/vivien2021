@@ -1,5 +1,90 @@
 export default [
     {
+        slug: "xbox-pgw",
+        active: true,
+        name: "Xbox × PGW",
+        subtitle: "Chatbot & jeu mobile",
+        meta: [
+            {
+                title: "Rôles",
+                items: [
+                    "Direction technique",
+                    "Développement jeu vidéo",
+                ]
+            },
+            {
+                title: "Technos",
+                items: [
+                    "Phaser JS",
+                    "Facebook Messenger",
+                    "Chatfuel",
+                ]
+            },
+            {
+                title: "Equipe",
+                items: [
+                    "Carburant",
+                ]
+            },
+            {
+                title: "Client",
+                items: [
+                    "Microsoft",
+                ]
+            },
+            {
+                title: "Année",
+                items: [
+                    2017,
+                ]
+            },
+        ]
+    },
+    {
+        slug: "les-very-goods",
+        active: true,
+        name: "Les Very Goods",
+        subtitle: "Guides d'achat & affiliation",
+        meta: [
+            {
+                title: "Rôles",
+                items: [
+                    "Développement back-office",
+                    "Développement API",
+                    "Gestion de projet technique",
+                ]
+            },
+            {
+                title: "Technos",
+                items: [
+                    "Framework Laravel",
+                    "Laravel Nova",
+                    "VueJS",
+                    "API Amazon Partner",
+                ]
+            },
+            {
+                title: "Equipe",
+                items: [
+                    "Webedia",
+                    "Les Very Goods",
+                ]
+            },
+            {
+                title: "Année",
+                items: [
+                    2020,
+                ]
+            },
+            {
+                title: "Lien",
+                items: [
+                    "https://www.lesverygoods.fr"
+                ]
+            }
+        ]
+    },
+    {
         slug: "sinking-city",
         active: true,
         name: "The Sinking City",
@@ -40,42 +125,40 @@ export default [
         ]
     },
     {
-        slug: "xbox-pgw",
+        slug: "adidas-decathlon",
         active: true,
-        name: "Xbox × PGW",
-        subtitle: "Chatbot & jeu mobile",
+        name: "Adidas × Decathlon",
+        subtitle: "Pages boutique",
         meta: [
             {
                 title: "Rôles",
                 items: [
-                    "Direction technique",
-                    "Développement jeu vidéo",
+                    "Développement front-end",
                 ]
             },
             {
                 title: "Technos",
                 items: [
-                    "Phaser JS",
-                    "Facebook Messenger",
-                    "Chatfuel",
+                    "Bootstrap 4",
+                    "CSS (Parallax 3D)",
                 ]
             },
             {
                 title: "Equipe",
                 items: [
-                    "Carburant",
+                    "Agence R2",
                 ]
             },
             {
                 title: "Client",
                 items: [
-                    "Microsoft",
+                    "Adidas",
                 ]
             },
             {
                 title: "Année",
                 items: [
-                    2017,
+                    2021,
                 ]
             },
         ]
@@ -160,89 +243,6 @@ export default [
                     2018,
                 ]
             },
-        ]
-    },
-    {
-        slug: "adidas-decathlon",
-        active: false,
-        name: "Adidas × Decathlon",
-        subtitle: "Pages boutique",
-        meta: [
-            {
-                title: "Rôles",
-                items: [
-                    "Développement front-end",
-                ]
-            },
-            {
-                title: "Technos",
-                items: [
-                    "Bootstrap 4",
-                    "CSS (Parallax 3D)",
-                ]
-            },
-            {
-                title: "Equipe",
-                items: [
-                    "Agence R2",
-                ]
-            },
-            {
-                title: "Client",
-                items: [
-                    "Adidas",
-                ]
-            },
-            {
-                title: "Année",
-                items: [
-                    2021,
-                ]
-            },
-        ]
-    },
-    {
-        slug: "les-very-goods",
-        active: true,
-        name: "Les Very Goods",
-        subtitle: "Guides d'achat & affiliation",
-        meta: [
-            {
-                title: "Rôles",
-                items: [
-                    "Développement back-office",
-                    "Développement API",
-                    "Gestion de projet technique",
-                ]
-            },
-            {
-                title: "Technos",
-                items: [
-                    "Framework Laravel",
-                    "Laravel Nova",
-                    "VueJS",
-                    "API Amazon Partner",
-                ]
-            },
-            {
-                title: "Equipe",
-                items: [
-                    "Webedia",
-                    "Les Very Goods",
-                ]
-            },
-            {
-                title: "Année",
-                items: [
-                    2020,
-                ]
-            },
-            {
-                title: "Lien",
-                items: [
-                    "https://www.lesverygoods.fr"
-                ]
-            }
         ]
     },
 ]
