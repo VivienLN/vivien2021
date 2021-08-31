@@ -14,7 +14,7 @@ export default function Project() {
             <ProjectBackground>
                 <Container>
                     <ProjectSummary>
-                        <SummaryParagraph>Pour la sortie du jeu Ni No Kuni 2, nous avons développé un site officiel en une page.</SummaryParagraph>
+                        <SummaryParagraph>Pour la sortie du jeu Ni No Kuni 2, nous avons développé le site officiel en une page.</SummaryParagraph>
                         <SummaryParagraph>Le site devait être 100% statique et pouvoir tourner sans aucun code serveur, tout en offrant une expérience immersive en six langues.</SummaryParagraph>
                     </ProjectSummary>
                 </Container>

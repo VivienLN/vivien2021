@@ -16,7 +16,7 @@ export default function Project() {
                     <ProjectSummary>
                         <SummaryParagraph>Les Very Goods est un site de recommandation d'achat fonctionnant avec le programme d'affiliation Amazon.</SummaryParagraph>
                         <SummaryParagraph>On y trouve des guides d'achat sur deux sujets principaux : la tech et la maison.</SummaryParagraph>
-                        <SummaryParagraph>Le back-office est construit sur-mesure pour les rédacteurs, et offre des fonctionnalités <strong>spécifiques à l'API amazon</strong> : sélection de produit, mise à jour des produits en rupture de stock, sélection des variantes et leurs prix, etc.</SummaryParagraph>
+                        <SummaryParagraph>Le back-office est construit sur-mesure pour les rédacteurs, et <strong>est connecté au catalogue amazon</strong> (via l'API partenaires), offrant des fonctionnalités dédiées : recherche et sélection de produit, mise à jour des produits en rupture de stock, sélection des variantes et leurs prix, etc.</SummaryParagraph>
                     </ProjectSummary>
                 </Container>
                 <Links slug="les-very-goods" />

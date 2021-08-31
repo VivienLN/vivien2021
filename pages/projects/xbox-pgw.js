@@ -17,7 +17,7 @@ export default function Project() {
                 <Container>
                     <ProjectSummary>
                         <SummaryParagraph>Chaque année, le stand Xbox est un incontournable de la Paris Games Week, le premier salon dédié au jeu vidéo en France.</SummaryParagraph>
-                        <SummaryParagraph>Cette année là, nous avons engagé les visiteurs dès la file d'attente. Avec l'agence Carburant, nous avons créé un jeu vidéo intégré au chatbot xbox (sur messenger)</SummaryParagraph>
+                        <SummaryParagraph>En 2017, nous avons engagé les visiteurs dès la file d'attente. Avec l'agence Carburant, nous avons créé un jeu vidéo intégré au chatbot xbox (sur messenger)</SummaryParagraph>
                         <SummaryParagraph>Les meilleurs joueurs ont gagné des prix et des coupe-files.</SummaryParagraph>
                         <SummaryParagraph>J'ai principalement participé à la <strong>conception</strong> (game design) et au <strong>développement</strong> du jeu.</SummaryParagraph>
                     </ProjectSummary>

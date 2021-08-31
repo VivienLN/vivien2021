@@ -228,11 +228,6 @@ export default [
                 title: "Equipe",
                 items: [
                     "Webedia",
-                ]
-            },
-            {
-                title: "Client",
-                items: [
                     "Les Very Goods",
                 ]
             },
@@ -245,7 +240,7 @@ export default [
             {
                 title: "Lien",
                 items: [
-                    "https://www.lesverygoods.fr/"
+                    "https://www.lesverygoods.fr"
                 ]
             }
         ]
