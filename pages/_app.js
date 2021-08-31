@@ -17,14 +17,14 @@ export default function App({Component, pageProps, router}) {
             <Component {...pageProps} key={router.route} />
             <motion.div
                 key={router.route + "AnimOut"}
-                className="bg-primary inset-0 fixed z-50 origin-top-right"
+                className="bg-secondary-dark inset-0 fixed z-50 origin-top-right"
                 initial={{ scaleX: 0, }}
                 exit={isBrowserNavigation ? null : { scaleX: 1 }}
                 transition={{ delay: 0, duration: .8, ease: "easeIn" }}
             />
             <motion.div
                 key={router.route + "AnimIn"}
-                className="bg-primary inset-0 fixed z-50 origin-top-left"
+                className="bg-secondary-dark inset-0 fixed z-50 origin-top-left"
                 initial={{ scaleX: 1 }}
                 animate={{ scaleX: 0 }}
                 exit={isBrowserNavigation ? null : { scaleX: 0 }}
