@@ -21,8 +21,8 @@ class Thumbnail extends React.Component {
                     <Link href={"/projects/" + this.props.project.slug} scroll={false}>
                         <a className={"bg-secondary-darker " + styles.link}>
                             <span className={"pointer-events-none absolute z-10 inset-0 flex flex-col text-center justify-center p-4 " + styles.linkText}>
-                                <span className="my-2 text-3xl font-extrabold fat-shadow-black ">{ this.props.project.name }</span>
-                                <span className="my-2 font-extrabold fat-shadow-black text-primary">{ this.props.project.subtitle }</span>
+                                <span className="my-2 text-3xl font-extrabold">{ this.props.project.name }</span>
+                                <span className="my-2 text-xl font-extrabold text-primary">{ this.props.project.subtitle }</span>
                             </span>
                             <PixiImage 
                                 src={ "/images/projects/" + this.props.project.slug + "/thumbnail.jpg" }
