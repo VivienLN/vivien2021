@@ -9,14 +9,14 @@ export default function Section() {
                 <div className="md:grid grid-cols-3 gap-4">
                     <div className="col-span-2 mb-16">                        
                         <InViewTransition>
-                            <h3 className="text-xl mb-8 font-extrabold fat-shadow-secondary-dark">Vous avez une question ou un projet&nbsp;?</h3>
+                            <h3 className="text-xl mb-8 font-extrabold">Vous avez une question ou un projet&nbsp;?</h3>
                             <p className="mb-4">Je me ferai un plaisir de vous répondre, peu importe votre demande :)</p>
                             <p><a target="_blank" className="link" href="mailto:vivienleneez@gmail.com">vivienleneez@gmail.com</a></p>
                         </InViewTransition>
                     </div>
                     <div className="col-span-1 mb-16">                     
                         <InViewTransition delay={500}>
-                            <h3 className="text-xl mb-8 font-extrabold fat-shadow-secondary-dark">Envie d'en savoir plus&nbsp;?</h3>
+                            <h3 className="text-xl mb-8 font-extrabold">Envie d'en savoir plus&nbsp;?</h3>
                             <p className="mb-4">Venez me faire coucou par là&nbsp;:</p>
                             <ul>
                                 <li className="inline-block mr-4">

@@ -29,10 +29,15 @@ module.exports = {
     fontSize: {
       'sm': '.9rem',
       'base': '1.0625rem',
-      'xl': '1.2rem',
-      '2xl': '1.8rem',
-      '3xl': '2.5rem',
-      '4xl': '4rem'
+      // 'xl': '1.2rem',
+      // '2xl': '1.8rem',
+      // '3xl': '2.5rem',
+      // '4xl': '4rem'
+      // 'base': '1rem',
+      'l': '1.2rem',
+      'xl': '1.6rem',
+      '2xl': '2.4rem',
+      '3xl': '3.2rem'
     },
     fontWeight: {
       'normal': 400,
