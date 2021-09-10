@@ -1,7 +1,7 @@
 export default function MetaList(props) {
     return (
-        <div className="">
-            <h2 className="font-extrabold text-lg my-4">{props.title}</h2>
+        <div className="mb-8 md:mb-0">
+            <h2 className="font-extrabold text-lg my-2">{props.title}</h2>
             <ul>
                 {props.items.map((item, i) => <li key={i}>{ prettifyMeta(item) }</li>)}
             </ul>
