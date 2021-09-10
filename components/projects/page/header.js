@@ -1,10 +1,8 @@
 import Head from "next/head"
 import Meta from "./meta"
-import TitleBanner from "./title-banner"
 import HeroBanner from "./hero-banner"
 import ButtonBack from "./button-back"
 import projectsDataHelpers from '../../../helpers/projects-data-helpers'
-import { useRouter } from 'next/router'
 
 export default function Header(props) {
     let slug = props.slug
@@ -18,8 +16,8 @@ export default function Header(props) {
             </Head>
 
             <ButtonBack />
-            <TitleBanner url={ heroUrl } title={ data.name } subtitle={ data.subtitle } />
-            <HeroBanner url={ heroUrl } />
+            {/* <TitleBanner url={ heroUrl } title={ data.name } subtitle={ data.subtitle } /> */}
+            <HeroBanner url={ heroUrl } title={ data.name } subtitle={ data.subtitle } />
             <Meta data={ data.meta }/>
         </header>
     )

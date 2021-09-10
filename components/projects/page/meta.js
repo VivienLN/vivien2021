@@ -15,7 +15,7 @@ export default function Meta(props) {
                     <Container>
                         <div className="md:flex justify-between">
                             { props.data.map((meta, i) => (
-                                    <MetaList key={i} title={ meta.title } items={ meta.items } />
+                                <MetaList key={i} title={ meta.title } items={ meta.items } />
                             )) }
                         </div>
                     </Container>

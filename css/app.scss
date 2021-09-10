@@ -10,7 +10,8 @@
 @layer base {
     body {
         @apply text-base;
-        @apply bg-black
+        @apply bg-black;
+        @apply leading-normal;
     }
     strong {
         @apply font-extrabold;
