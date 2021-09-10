@@ -1,14 +1,10 @@
 import ProjectThumbnail from './thumbnail'
 import SectionBase from '../section'
 import styles from './projects.module.scss'
-import { useInView } from 'react-intersection-observer';
 import projectsDataHelpers from '../../helpers/projects-data-helpers'
+import InViewTransition from '../in-view-transition'
 
 export default function Section(props) {
-    const { ref, inView, entry } = useInView({
-        threshold: .3,
-        triggerOnce: true,
-    })
     var projects = projectsDataHelpers.getActive()
     // Add empty projects to have a multiple of 3 (because there are 3 per line)
     while(projects.length < Math.ceil(projects.length / 3) * 3) {
@@ -17,7 +13,7 @@ export default function Section(props) {
 
     return (
         <SectionBase title="Réalisations" id="section-projects">
-            <div ref={ref} className={styles.projectsSection + " " + (inView ? styles.inView : "")}>
+            <InViewTransition>
                 <div className="grid grid-cols-1 md:grid-cols-3">
                     { 
                         projects.map(
@@ -25,7 +21,7 @@ export default function Section(props) {
                         )
                     }
                 </div>
-            </div>
+            </InViewTransition>
         </SectionBase>
     )
 }
