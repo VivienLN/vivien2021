@@ -5,13 +5,13 @@ import styles from './intro.module.scss'
 export default function Section() {
     return (
         <header className={"relative " + styles.introHeader}>
-            <div className={"bg-black md:fixed top-0 left-0 right-0 " + styles.introContent}>
-                <Container className="h-full relative">
-                    <div className="h-full py-20 md:py-0 flex flex-col justify-evenly pt-10 pb-20">
-                        <h1 className="text-base">
+            <div className={"bg-black md:fixed top-0 left-0 right-0"}>
+                <Container>
+                    <div className={"relative flex flex-col justify-center pt-10 pb-20 " + styles.introContent}>
+                        <h1 className="text-base mb-12">
                             <span className="text-2xl md:text-3xl font-extrabold"><strong className="fat-shadow-secondary-dark">Hello !</strong><br/> Je suis Vivien, développeur web</span>
                         </h1>
-                        <div className="text-l">
+                        <div className="text-l mb-12">
                             <p className="mb-4">
                                 Depuis 12 ans, j'accompagne des entreprises et des agences dans la création de sites et applications web.
                             </p>
@@ -22,12 +22,9 @@ export default function Section() {
                                 Continuez pour en savoir plus ou allez voir <a target="_blank" className="link" href="https://www.linkedin.com/in/vivien-le-neez-8364236a/">mon profil linkedin</a> ou <a target="_blank" className="link" href="https://www.malt.fr/profile/vivienln">ma page malt</a>.
                             </p>
                         </div>
-                    </div>
                         <ButtonScroll />
+                    </div>
                 </Container>
-            </div>
-
-            <div className={"bg-gray-darkest absolute left-0 right-0 z-10 items-center transform -skew-y-3 origin-top-left " + styles.introEndBg }>
             </div>
         </header>
     )
