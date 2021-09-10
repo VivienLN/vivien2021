@@ -1,6 +1,5 @@
 import ProjectThumbnail from './thumbnail'
 import SectionBase from '../section'
-import styles from './projects.module.scss'
 import projectsDataHelpers from '../../helpers/projects-data-helpers'
 import InViewTransition from '../in-view-transition'
 
@@ -14,7 +13,7 @@ export default function Section(props) {
     return (
         <SectionBase title="Réalisations" id="section-projects">
             <InViewTransition>
-                <div className="grid grid-cols-1 md:grid-cols-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     { 
                         projects.map(
                             (data, index) => <ProjectThumbnail key={data.slug} project={data} />
