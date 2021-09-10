@@ -11,7 +11,7 @@ export default function Section() {
                         <h1 className="text-base mb-12">
                             <span className="text-2xl md:text-3xl font-extrabold"><strong className="fat-shadow-secondary-dark">Hello !</strong><br/> Je suis Vivien, développeur web</span>
                         </h1>
-                        <div className="text-l mb-12">
+                        <div className="text-lg mb-12">
                             <p className="mb-4">
                                 Depuis 12 ans, j'accompagne des entreprises et des agences dans la création de sites et applications web.
                             </p>

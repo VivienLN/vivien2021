@@ -34,7 +34,7 @@ module.exports = {
       // '3xl': '2.5rem',
       // '4xl': '4rem'
       // 'base': '1rem',
-      'l': '1.2rem',
+      'lg': '1.2rem',
       'xl': '1.6rem',
       '2xl': '2.4rem',
       '3xl': '3.2rem'
