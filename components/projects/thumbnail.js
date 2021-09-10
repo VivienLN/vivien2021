@@ -27,7 +27,7 @@ class Thumbnail extends React.Component {
                             <PixiImage 
                                 src={ "/images/projects/" + this.props.project.slug + "/thumbnail.jpg" }
                                 width={800}
-                                height={this.props.smaller ? 300 : 500}
+                                height={500}
                                 alt="" 
                                 transitionDelayRatio={.84}
                                 transitionDelay={26}
