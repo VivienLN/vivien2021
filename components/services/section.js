@@ -8,7 +8,7 @@ import Container from '../container'
 
 export default function Section() {
     return (
-        <SectionBase title="Services">
+        <SectionBase title="Services" id="section-services">
             <Container>
                 <Step01 />
                 <StepLine01 />
