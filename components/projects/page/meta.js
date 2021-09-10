@@ -10,18 +10,16 @@ export default function Meta(props) {
                     box-shadow: 0px -4px 4px rgb(0 0 0 / 10%);
                 }
             `}</style>
-            <div className="boxShadow bg-secondary-darker py-12 md:py-20 transform -skew-y-3 origin-top-left">
-                <div className="transform skew-y-3 py-8">
-                    <InViewTransition>
-                        <Container>
-                            <div className="md:flex justify-between">
-                                { props.data.map((meta, i) => (
-                                        <MetaList key={i} title={ meta.title } items={ meta.items } />
-                                )) }
-                            </div>
-                        </Container>
-                    </InViewTransition>
-                </div>
+            <div className="boxShadow bg-secondary-darker py-12 md:py-20">
+                <InViewTransition>
+                    <Container>
+                        <div className="md:flex justify-between">
+                            { props.data.map((meta, i) => (
+                                    <MetaList key={i} title={ meta.title } items={ meta.items } />
+                            )) }
+                        </div>
+                    </Container>
+                </InViewTransition>
             </div>
         </div>
     )
