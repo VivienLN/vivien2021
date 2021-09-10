@@ -1,13 +1,8 @@
-.projectsGrid {
-    width: 104%; 
-    padding: 5.5% 0 0;
-}
-
 .projectsSection {
     .projectThumbnail {
         opacity: 0;
         transition: .8s cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        transform: translateY(60px) rotate(-3deg);
+        transform: translateY(60px);
         transform-origin: bottom left;
         @for $i from 1 to 9 {
             &:nth-child(#{$i}) {
@@ -18,7 +13,7 @@
     &.inView {
         .projectThumbnail {
             opacity: 1;
-            transform: translateY(0) rotate(-3deg);
+            transform: translateY(0);
         }
     }
 }
@@ -59,7 +54,7 @@
         }
     }
 
-    &:active, &:focus {
+    &:active {
         @apply bg-secondary-dark;
         
         .linkText {
@@ -79,11 +74,11 @@
 @screen md {
     .projectsSection {
         .projectThumbnail {
-            transform: translateY(60px) rotate(0);
+            transform: translateY(60px);
         }
         &.inView {
             .projectThumbnail {
-                transform: translateY(0) rotate(0);
+                transform: translateY(0);
             }
         }
     }

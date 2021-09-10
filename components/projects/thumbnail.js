@@ -17,7 +17,7 @@ class Thumbnail extends React.Component {
     render() {
         if(this.props.project && Object.keys(this.props.project).length > 0) {
             return (
-                <div className={"overflow-hidden rounded relative " + styles.projectThumbnail }>
+                <div className={"overflow-hidden relative " + styles.projectThumbnail }>
                     <Link href={"/projects/" + this.props.project.slug} scroll={false}>
                         <a className={"bg-secondary-darker " + styles.link}>
                             <span className={"pointer-events-none absolute z-10 inset-0 flex flex-col text-center justify-center p-4 " + styles.linkText}>
@@ -42,7 +42,7 @@ class Thumbnail extends React.Component {
         
         // Return empty thumbnail
         return (
-            <div className={"overflow-hidden rounded relative " + styles.projectThumbnail }>
+            <div className={"overflow-hidden relative " + styles.projectThumbnail }>
                 <span className={"bg-secondary-darker h-full w-full block opacity-50"}>
                 </span>
             </div>
