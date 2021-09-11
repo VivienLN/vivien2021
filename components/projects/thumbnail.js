@@ -29,7 +29,7 @@ class Thumbnail extends React.Component {
                                 width={800}
                                 height={500}
                                 alt="" 
-                                transitionDelayRatio={.84}
+                                transitionDelayRatio={.7}
                                 transitionDelay={26}
                                 transitionMask={ "/images/projects/mask.jpg"}
                                 gradientMap={{0: "#000", 0.5: "#068ec3", 1: "#ffec4e"}}
