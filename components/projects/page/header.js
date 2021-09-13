@@ -1,7 +1,6 @@
 import Head from "next/head"
 import Meta from "./meta"
 import HeroBanner from "./hero-banner"
-import ButtonBack from "./button-back"
 import projectsDataHelpers from '../../../helpers/projects-data-helpers'
 
 export default function Header(props) {
@@ -15,8 +14,6 @@ export default function Header(props) {
                 <title>{ data.name } - Vivien</title>
             </Head>
 
-            <ButtonBack />
-            {/* <TitleBanner url={ heroUrl } title={ data.name } subtitle={ data.subtitle } /> */}
             <HeroBanner url={ heroUrl } title={ data.name } subtitle={ data.subtitle } />
             <Meta data={ data.meta }/>
         </header>

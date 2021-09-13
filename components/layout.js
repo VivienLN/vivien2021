@@ -1,10 +1,11 @@
-import { AnimatePresence, motion } from "framer-motion"
-import Footer from './footer'
+import Footer from "./footer"
+import Header from "./header"
 
-export default function Layout({ children }) {
+export default function Layout(props) {
     return (
         <div>
-            {children}
+            <Header isProject={props.isProject} />
+            { props.children }
             <Footer />
         </div>
     )

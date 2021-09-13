@@ -10,7 +10,7 @@ import Links from "../../components/projects/page/links"
 
 export default function Project() {
     return (
-        <Layout>
+        <Layout isProject>
             <ProjectHeader slug="les-very-goods" />
             <ProjectBackground>
                 <Container>
