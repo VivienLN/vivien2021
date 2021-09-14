@@ -10,17 +10,22 @@ export default function Header(props) {
     var buttonBack = (<ButtonBack href="/#section-projects" className="fill-current hover:text-white" />)
     
     return (    
-        <div className="text-right p-4 w-full fixed z-30 flex justify-between">
-            <div className="p-4 text-primary">
+        <header className="text-right p-4 w-full fixed z-30 flex justify-between filter drop-shadow-xl pointer-events-none">
+            <style jsx>{`
+                header {
+                    background-image: linear-gradient(to bottom, rgba(0,0,0,.1), transparent);
+                }
+            `}</style>
+            <div className="p-4 text-primary pointer-events-auto">
                 <div className="w-9 h-9">
                     { props.isProject ? buttonBack : logo }
                 </div>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end pointer-events-auto">
                 <HeaderButton icon={MaltIcon} color="#fc5656" blank url="https://www.malt.fr/profile/vivienln" />
                 <HeaderButton icon={LinkedinIcon} color="#006edb" blank url="https://www.linkedin.com/in/vivien-le-neez-8364236a/" />
                 <HeaderButton icon={TwitterIcon} color="#1ca4ff" blank url="https://twitter.com/vivien_le_neez" />
             </div>
-        </div>
+        </header>
     )
 }
