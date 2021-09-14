@@ -11,7 +11,7 @@ export default function HeroBanner(props) {
                 }
             `}</style>
             <Container className="h-full">
-                <div className="py-20 h-full flex flex-col justify-center">
+                <div className="py-20 h-full flex flex-col justify-center filter drop-shadow-xl">
                     <h1 className="text-2xl lg:text-4xl font-extrabold mb-8">{ props.title }</h1>
                     <p className="lg:text-xl font-extrabold text-primary">{ props.subtitle }</p>
                 </div>
