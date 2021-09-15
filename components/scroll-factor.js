@@ -6,11 +6,18 @@ export default function ScrollFactor(props) {
 
     useEffect(() => {
         if(typeof window !== "undefined") {
+            const getCenterY = () =>  {
+                let bounds = wrapperRef.current.getBoundingClientRect()
+                return bounds.top + (bounds.bottom - bounds.top) / 2
+            }
+            const originalY = getCenterY()
+
             const handleScroll = event => {
                 let windowHeight = window.innerHeight
-                let wrapperBounds = wrapperRef.current.getBoundingClientRect()
-                let posY = wrapperBounds.top + (wrapperBounds.bottom - wrapperBounds.top) / 2
-                setOffset(-(windowHeight / 2 - posY) * (props.ratio - 1))
+                let posY = getCenterY()
+                // The position where the element offset is 0
+                let origin = originalY < windowHeight ? originalY : windowHeight / 2;
+                setOffset(-(props.ratio - 1) * (origin  - posY))
             }            
             handleScroll()
             window.addEventListener('scroll', handleScroll)
