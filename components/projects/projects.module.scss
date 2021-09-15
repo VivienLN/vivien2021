@@ -1,18 +1,19 @@
 .link {
     display: block;
+    $t: .6s;
 
     .linkText > span {
-        $t: .4s;
         display: block;
         opacity: 0;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transform: translateY(100%);
-        &:nth-child(1) {
-            transition: all $t 0s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity .2s 0s ease-in-out;
-        }
-        &:nth-child(2) {
-            transition: all $t .2s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity .2s 0s ease-in-out;
-        }
+        transition: all $t 0s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        // &:nth-child(1) {
+        //     transition: all $t 0s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        // }
+        // &:nth-child(2) {
+        //     transition: all $t .2s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        // }
     }
 
     canvas {
@@ -25,6 +26,9 @@
             opacity: 1;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             transform: translateY(0);
+            &:nth-child(2) {
+                transition-delay: .2s;
+            }
         }
 
         canvas {
