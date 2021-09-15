@@ -16,7 +16,7 @@
     }
 
     canvas {
-        transform: scale(1);
+        transform: scale(1.05);
         transition: 2s cubic-bezier(0.155, 0.320, 0.130, 1.010);
     }
 
@@ -33,7 +33,7 @@
         }
     }
 
-    &:active {
+    &:active, &:focus {
         @apply bg-secondary-dark;
         
         .linkText {
@@ -43,7 +43,7 @@
         }
 
         canvas {
-            transform: scale(1.3);
+            transform: scale(1.6);
             opacity: 0;
             transition: .5s ease-in;
         }
