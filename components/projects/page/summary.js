@@ -1,4 +1,3 @@
-import Container from '../../container'
 import Section from './section'
 
 export default function Summary(props) {
