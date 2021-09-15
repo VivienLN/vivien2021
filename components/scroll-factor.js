@@ -16,7 +16,7 @@ export default function ScrollFactor(props) {
                 let windowHeight = window.innerHeight
                 let posY = getCenterY()
                 // The position where the element offset is 0
-                let origin = originalY < windowHeight ? originalY : windowHeight / 2;
+                let origin = (originalY < windowHeight && originalY > 0) ? originalY : windowHeight / 2;
                 setOffset(-(props.ratio - 1) * (origin  - posY))
             }            
             handleScroll()
