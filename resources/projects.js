@@ -1,90 +1,5 @@
 export default [
     {
-        slug: "xbox-pgw",
-        active: true,
-        name: "Xbox × PGW",
-        subtitle: "Chatbot & jeu mobile",
-        meta: [
-            {
-                title: "Rôles",
-                items: [
-                    "Direction technique",
-                    "Développement jeu vidéo",
-                ]
-            },
-            {
-                title: "Technos",
-                items: [
-                    "Phaser JS",
-                    "Facebook Messenger",
-                    "Chatfuel",
-                ]
-            },
-            {
-                title: "Equipe",
-                items: [
-                    "Carburant",
-                ]
-            },
-            {
-                title: "Client",
-                items: [
-                    "Microsoft",
-                ]
-            },
-            {
-                title: "Année",
-                items: [
-                    2017,
-                ]
-            },
-        ]
-    },
-    {
-        slug: "les-very-goods",
-        active: true,
-        name: "Les Very Goods",
-        subtitle: "Guides d'achat & affiliation",
-        meta: [
-            {
-                title: "Rôles",
-                items: [
-                    "Développement back-office",
-                    "Développement API",
-                    "Gestion de projet technique",
-                ]
-            },
-            {
-                title: "Technos",
-                items: [
-                    "Framework Laravel",
-                    "Laravel Nova",
-                    "VueJS",
-                    "API Amazon Partner",
-                ]
-            },
-            {
-                title: "Equipe",
-                items: [
-                    "Webedia",
-                    "Les Very Goods",
-                ]
-            },
-            {
-                title: "Année",
-                items: [
-                    2020,
-                ]
-            },
-            {
-                title: "Lien",
-                items: [
-                    "https://www.lesverygoods.fr"
-                ]
-            }
-        ]
-    },
-    {
         slug: "sinking-city",
         active: true,
         name: "The Sinking City",
@@ -164,42 +79,42 @@ export default [
         ]
     },
     {
-        slug: "le-fil-loreal",
-        active: false,
-        name: "Le Fil L'Oréal",
-        subtitle: "Plateforme influenceurs",
+        slug: "xbox-pgw",
+        active: true,
+        name: "Xbox × PGW",
+        subtitle: "Chatbot & jeu mobile",
         meta: [
             {
                 title: "Rôles",
                 items: [
-                    "Gestion de projet technique",
+                    "Direction technique",
+                    "Développement jeu vidéo",
                 ]
             },
             {
                 title: "Technos",
                 items: [
-                    "Symfony",
-                    "VueJS",
-                    "Instagram API",
+                    "Phaser JS",
+                    "Facebook Messenger",
+                    "Chatfuel",
                 ]
             },
             {
                 title: "Equipe",
                 items: [
-                    "Sampleo",
-                    "Webedia",
+                    "Carburant",
                 ]
             },
             {
                 title: "Client",
                 items: [
-                    "L'Oréal",
+                    "Microsoft",
                 ]
             },
             {
                 title: "Année",
                 items: [
-                    2020,
+                    2017,
                 ]
             },
         ]
@@ -241,6 +156,91 @@ export default [
                 title: "Année",
                 items: [
                     2018,
+                ]
+            },
+        ]
+    },
+    {
+        slug: "les-very-goods",
+        active: true,
+        name: "Les Very Goods",
+        subtitle: "Guides d'achat & affiliation",
+        meta: [
+            {
+                title: "Rôles",
+                items: [
+                    "Développement back-office",
+                    "Développement API",
+                    "Gestion de projet technique",
+                ]
+            },
+            {
+                title: "Technos",
+                items: [
+                    "Framework Laravel",
+                    "Laravel Nova",
+                    "VueJS",
+                    "API Amazon Partner",
+                ]
+            },
+            {
+                title: "Equipe",
+                items: [
+                    "Webedia",
+                    "Les Very Goods",
+                ]
+            },
+            {
+                title: "Année",
+                items: [
+                    2020,
+                ]
+            },
+            {
+                title: "Lien",
+                items: [
+                    "https://www.lesverygoods.fr"
+                ]
+            }
+        ]
+    },
+    {
+        slug: "le-fil-loreal",
+        active: false,
+        name: "Le Fil L'Oréal",
+        subtitle: "Plateforme influenceurs",
+        meta: [
+            {
+                title: "Rôles",
+                items: [
+                    "Gestion de projet technique",
+                ]
+            },
+            {
+                title: "Technos",
+                items: [
+                    "Symfony",
+                    "VueJS",
+                    "Instagram API",
+                ]
+            },
+            {
+                title: "Equipe",
+                items: [
+                    "Sampleo",
+                    "Webedia",
+                ]
+            },
+            {
+                title: "Client",
+                items: [
+                    "L'Oréal",
+                ]
+            },
+            {
+                title: "Année",
+                items: [
+                    2020,
                 ]
             },
         ]
