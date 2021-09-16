@@ -1,35 +1,31 @@
 import Container from '../container'
 import SectionBase from '../section'
-import InViewTransition from '../in-view-transition'
+import { MailIcon, DeviceMobileIcon } from '@heroicons/react/solid'
+import ButtonCopy from '../button-copy'
 
 export default function Section() {
+    const email = "vivienleneez@gmail.com"
     return (
         <SectionBase title="Contact">
             <Container>
-                <div className="md:grid grid-cols-3 gap-4">
-                    <div className="col-span-2 mb-16">                        
-                        <InViewTransition>
-                            <h3 className="text-xl mb-8 font-extrabold">Vous avez une question ou un projet&nbsp;?</h3>
-                            <p className="mb-4">Je me ferai un plaisir de vous répondre, peu importe votre demande :)</p>
-                            <p><a target="_blank" className="link" href="mailto:vivienleneez@gmail.com">vivienleneez@gmail.com</a></p>
-                        </InViewTransition>
+                <div className="md:grid grid-cols-3 gap-8 items-center">
+                    <div>
+                        // Photo ?
                     </div>
-                    <div className="col-span-1 mb-16">                     
-                        <InViewTransition delay={500}>
-                            <h3 className="text-xl mb-8 font-extrabold">Envie d'en savoir plus&nbsp;?</h3>
-                            <p className="mb-4">Venez me faire coucou par là&nbsp;:</p>
-                            <ul>
-                                <li className="inline-block mr-4">
-                                    <a target="_blank" className="link" href="https://www.linkedin.com/in/vivien-le-neez-8364236a/">linkedin</a>
-                                </li>
-                                <li className="inline-block mr-4">
-                                    <a target="_blank" className="link" href="https://twitter.com/vivien_le_neez">twitter</a>
-                                </li>
-                                <li className="inline-block mr-4">
-                                    <a target="_blank" className="link" href="https://www.malt.fr/profile/vivienln">malt</a>
-                                </li>
-                            </ul>                     
-                        </InViewTransition>
+                    <div className="col-span-2">
+                        <h3 className="text-xl mb-8 font-extrabold">On parle de vos projets&nbsp;?</h3>
+                        <p className="mb-4">
+                            Pour qu'on se rencontre, ou simplement discuter de vos projets, envoyez-moi un message&nbsp;!
+                        </p>
+                        <p className="mb-4">
+                            <a target="_blank" className="link" href="mailto:vivienleneez@gmail.com">
+                                <MailIcon className="w-6 h-6 inline-block mr-2" />
+                                <span>{ email }</span>
+                            </a>
+                            <span className="ml-4 inline-block">
+                                <ButtonCopy value={email} labelDone="Adresse mail copiée" labelError="Erreur">Copier</ButtonCopy>
+                            </span>
+                        </p>
                     </div>
                 </div>
             </Container>
