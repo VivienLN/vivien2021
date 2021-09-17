@@ -15,13 +15,10 @@ export default function Section() {
                             </h1>
                             <div className="text-lg mb-12">
                                 <p className="mb-4">
-                                    Depuis 12 ans, j'accompagne des entreprises et des agences dans la création de sites et applications web.
+                                    Depuis 12 ans j'accompagne, en agence, des clients de tous horizons tels que Microsoft, Universal ou SNCF.
                                 </p>
                                 <p className="mb-4">
-                                    Mes outils de choix sont <strong>Laravel</strong> et <strong>Wordpress</strong>.
-                                </p>
-                                <p>
-                                    Continuez pour en savoir plus ou allez voir <a target="_blank" className="link" href="https://www.linkedin.com/in/vivien-le-neez-8364236a/">mon profil linkedin</a> ou <a target="_blank" className="link" href="https://www.malt.fr/profile/vivienln">ma page malt</a>.
+                                    Aujourd'hui je mets mes compétences au services de vos projets.
                                 </p>
                             </div>
                             <ButtonScroll />

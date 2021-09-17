@@ -2,6 +2,7 @@ import ProjectThumbnail from './thumbnail'
 import SectionBase from '../section'
 import projectsDataHelpers from '../../helpers/projects-data-helpers'
 import InViewTransition from '../in-view-transition'
+import Container from '../container'
 
 export default function Section(props) {
     var projects = projectsDataHelpers.getActive()

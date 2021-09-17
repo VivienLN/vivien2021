@@ -8,7 +8,7 @@ import Container from '../container'
 
 export default function Section() {
     return (
-        <SectionBase title="Mon offre" id="section-offre">
+        <SectionBase title="Mon offre en 3 étapes" id="section-offre">
             <Container>
                 <Step01 />
                 <StepLine01 />
