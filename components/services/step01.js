@@ -20,7 +20,7 @@ export default function Step01(props) {
             </div>
             <div className="col-span-4 md:col-span-3 self-center">
                 <StepContent title="1. Accompagner">
-                    <p className="mb-4">On prend un café et on parle de votre projet. Je vous propose des solutions sur-mesure, adaptées à votre besoin et votre budget. </p>
+                    <p className="mb-4">On prend un café et on parle de votre projet. Je vous propose des solutions sur-mesure, <strong>adaptées à votre besoin et votre budget</strong>. </p>
                     <p className="mb-4">Appuyé par mon réseau de spécialistes du web, je peux vous accompagner de&nbsp;A&nbsp;à&nbsp;Z&nbsp;: Design, expérience utilisateur, rédaction, etc.</p>
                     <p className="">Enfin, on établit ensemble un cahier des charges avant d'aller plus loin.</p>
                 </StepContent>

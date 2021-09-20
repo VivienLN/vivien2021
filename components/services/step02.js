@@ -19,7 +19,7 @@ export default function Step02(props) {
             </div>
             <div className="col-span-2 self-center">
                 <StepContent title="2. Réaliser">
-                    <p className="mb-4">Détendez vous, je m'occupe de chaque détail.</p>
+                    <p className="mb-4">Détendez-vous, je m'occupe de chaque détail.</p>
                     <p className="">On continue cependant d'échanger et vous gardez l'oeil sur l'avancée de la production. De mon coté, je m’engage à livrer des sites et applications rapides, sécurisés et robustes.</p>
                 </StepContent>
             </div>
