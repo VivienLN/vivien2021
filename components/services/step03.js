@@ -20,8 +20,8 @@ export default function Step03(props) {
             </div>
             <div className="col-span-3 md:col-span-2 self-center">
                 <StepContent title="3. Suivi">
-                    <p className="mb-4">Une fois la mise en ligne terminée, je ne vous laisse pas en plan&nbsp;! </p>
-                    <p className="">Je vous accompagne sur le long terme&nbsp;: on met en place des outils de mesure pour évaluer, corriger, et faire évoluer.</p>
+                    <p className="mb-4">Je ne vous abandonne une fois la mise en ligne terminée&nbsp;!</p>
+                    <p className="">Parcequ'une bonne collaboration se construit <strong>sur le long&nbsp;terme</strong>, on met en place des outils pour mesurer, corriger, et faire évoluer.</p>
                 </StepContent>
             </div>
         </div>
