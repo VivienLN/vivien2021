@@ -52,13 +52,13 @@ module.exports = {
     colors: {
       base: '#fff',
       white: '#fff',
-      black: '#000',
+      black: '#101112',
       transparent: 'transparent',
       gray: {
         DEFAULT: '#666',
         dark: '#666',
-        darker: '#222',
-        darkest: '#091011',
+        darker: '#333',
+        darkest: '#1b1e22',
         light: '#999',
         lighter: '#bbb',
         lightest: '#ddd',
@@ -72,7 +72,7 @@ module.exports = {
         DEFAULT: '#4bd2ef',
         light: '#a9f4ff',
         dark: '#00688f',
-        darker: '#141e27',
+        darker: '#151a1e',
         faded: '#5db1dc'
       },
     }
