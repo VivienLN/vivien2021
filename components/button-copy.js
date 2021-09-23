@@ -14,7 +14,7 @@ export default function ButtonCopy(props) {
         })
     }
     return (
-        <button className="border border-gray-darker hover:border-secondary-dark hover:bg-secondary-dark px-2 py-1 text-sm rounded" onClick={copyMail}>
+        <button className="border border-gray-darker hover:border-secondary-dark hover:bg-secondary-dark px-2 py-1 text-sm rounded transition duration-300" onClick={copyMail}>
             { label }
         </button>
     )

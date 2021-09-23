@@ -64,14 +64,14 @@ module.exports = {
         lightest: '#ddd',
       },
       primary: {
-        DEFAULT: '#ffe200',
+        DEFAULT: '#ffe311',
         dark: '#f5ce00',
         darker: '#e7c300'
       },
       secondary: {
-        DEFAULT: '#4bd2ef',
-        light: '#a9f4ff',
-        dark: '#00688f',
+        DEFAULT: '#31c2ff',
+        light: '#a2faff',
+        dark: '#007fae',
         darker: '#151a1e',
         faded: '#5db1dc'
       },

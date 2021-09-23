@@ -1,6 +1,6 @@
 export default function IconWand(props) {
-    let colorPrimary = "text-white"
-    let colorSecondary = "text-primary-dark"
+    let colorPrimary = "text-secondary-light"
+    let colorSecondary = "text-secondary"
     return (
         <svg viewBox="-7 -5 74 74" xmlns="http://www.w3.org/2000/svg">
             <path d="M42.489 24.073c1.615 1.789 2.344 3.763 1.628 4.41-.715.646-2.605-.28-4.22-2.07-1.615-1.789-2.344-3.763-1.628-4.41.716-.646 2.605.28 4.22 2.07zM41.83 29.409c-.927-.455-1.922-1.241-2.8-2.214-1.075-1.191-1.953-2.658-2.158-3.93L24.986 33.993c-.716.646.013 2.621 1.628 4.41 1.615 1.789 3.505 2.715 4.221 2.069l11.883-10.726a4.748 4.748 0 01-.888-.337z" className={"fill-current " + colorPrimary} />

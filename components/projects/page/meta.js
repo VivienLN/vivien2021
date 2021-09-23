@@ -4,13 +4,13 @@ import InViewTransition from '../../in-view-transition'
 
 export default function Meta(props) {
     return (
-        <div className="relative z-10 bg-gray-darkest">
+        <div className="relative z-10 bg-secondary">
             <style jsx>{`
                 .boxShadow {
                     box-shadow: 0px -4px 4px rgb(0 0 0 / 10%);
                 }
             `}</style>
-            <div className="boxShadow bg-secondary-darker py-12 md:py-20">
+            <div className="boxShadow bg-secondary-dark py-12 md:py-20">
                 <InViewTransition>
                     <Container>
                         <div className="md:flex justify-between">
