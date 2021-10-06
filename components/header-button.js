@@ -30,12 +30,12 @@ export default function HeaderButton(props) {
                     transform: scale(1);
                 }
             `}</style>
-            <a href={props.url} target="_blank" className="block relative p-5 mx-1 text-primary hover:text-white">
+            <a href={props.url} target="_blank" className="block relative p-5 mx-1 text-white hover:text-white">
                 <div className="hexagon">
                     <Hexagon strokeWidth={5} className="block absolute left-0 top-0 w-full h-full fill-current" />
                 </div>
                 <div className="icon">
-                    {IconClass && <IconClass className="block w-7 h-7 fill-current" />}
+                    {IconClass && <IconClass className="block w-8 h-8 fill-current" />}
                 </div>
             </a>
         </div>

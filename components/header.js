@@ -7,17 +7,17 @@ import ButtonBack from './button-back'
 
 export default function Header(props) {
     var logo = (<Logo className="fill-current" />)
-    var buttonBack = (<ButtonBack href="/#section-projects" className="fill-current hover:text-white" />)
+    var buttonBack = (<ButtonBack href="/#section-projects" className="fill-current hover:text-primary" />)
     
     return (    
-        <header className="text-right p-4 w-full fixed z-30 flex justify-between filter drop-shadow-xl pointer-events-none">
+        <header className="text-right p-4 w-full fixed z-30 flex justify-between filter drop-shadow-2xl pointer-events-none">
             <style jsx>{`
                 header {
                     background-image: linear-gradient(to bottom, rgba(0,0,0,.1), transparent);
                 }
             `}</style>
-            <div className="p-4 text-primary pointer-events-auto">
-                <div className="w-9 h-9">
+            <div className="p-3 text-white pointer-events-auto">
+                <div className="w-12 h-12">
                     { props.isProject ? buttonBack : logo }
                 </div>
             </div>

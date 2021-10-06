@@ -71,7 +71,7 @@ module.exports = {
       secondary: {
         DEFAULT: '#31c2ff',
         light: '#a2faff',
-        dark: '#007fae',
+        dark: '#205b8b',
         darker: '#151a1e',
         faded: '#5db1dc'
       },

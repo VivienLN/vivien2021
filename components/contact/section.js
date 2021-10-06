@@ -6,7 +6,12 @@ import ButtonCopy from '../button-copy'
 export default function Section() {
     const email = "vivienleneez@gmail.com"
     return (
-        <SectionBase title="Contact">
+        <SectionBase title="Contact" className="bg-secondary-dark section-contact flex flex-col justify-center">
+            <style jsx>{`
+                 :global(.section-contact) {
+                    min-height: 70vh;
+                }
+            `}</style>
             <Container>
                 <div className="pb-20">
                     <h3 className="text-xl mb-8 font-extrabold">On parle de vos projets&nbsp;?</h3>
