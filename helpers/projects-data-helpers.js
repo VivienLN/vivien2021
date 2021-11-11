@@ -5,10 +5,10 @@ export default {
         return projectsData.filter(item => item.active)
     },
     getBySlug: function(slug) {
-        return this.getActive().find(item => item.slug == slug)
+        return projectsData.find(item => item.slug == slug)
     },
     getIndexBySlug: function(slug) {
-        return this.getActive().findIndex(item => item.slug == slug)
+        return projectsData.findIndex(item => item.slug == slug)
     },
     getPreviousBySlug: function(slug) {
         let index = this.getIndexBySlug(slug)
